@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar {
+    border-radius: 20px;
+    width: 25%;
+    background-color: #ffffff;
+    padding: 20px;
+    z-index: 2; 
+    position: relative; 
+}
+
+.sidebar h1 {
+    padding-top:30px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-right:10%;
+    padding-left:10%;
+}
+
+.sidebar p {
+    padding-right:10%;
+    padding-left:10%;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 20px;
+    font-style: italic;
+    text-align:justify;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.mapa {
+    border-radius: 35px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 25%; 
+    z-index: 1;  
+    height: 100%;
+    width: 100%; 
+}
+
+.icons {
+    border-radius:20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 2; 
+}
+.icon-button {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: white; /* Cor de fundo inicial */
+    border: none; /* Remover bordas */
+    border-radius: 20px; /* Cantos arredondados */
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+    padding: 10px; /* Espaçamento interno */
+    transition: background-color 0.3s; /* Transição suave para a mudança de cor */
+}
+
+.icon-button:hover {
+    background-color: #f0f0f0; /* Cor mais escura quando o mouse está sobre o botão */
+}
+.icons img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.modal {
+    padding-top:10%;
+    padding-left:40%;
+    display: none; /* Inicialmente escondido */
+    position: fixed; /* Fixa o modal sobre a tela */
+    z-index: 3; /* Acima de todos os elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Cobre a tela inteira */
+    height: 100%; /* Cobre a tela inteira */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.modal-content {
+    background-color: #fff; /* Fundo branco para o bloco de notas */
+    border-radius: 10px; /* Canto arredondado */
+    padding: 20px;
+    width: 40%; /* Largura do modal */
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2); /* Sombra */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modal-content h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    resize: none; /* Impede o redimensionamento */
+}
+
+#salvar-notas{
+    background-color: #000000; /* Cor verde para o botão */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Cor verde mais escura ao passar o mouse */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #aaa;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000; /* Cor preta ao passar o mouse */
+}
+
+.definicoes-box {
+    position: fixed; /* Fixa a caixa no canto da tela */
+    top: 20px; /* Distância do topo */
+    right: 20px; /* Distância da direita */
+    width: 300px; /* Largura da caixa */
+    background-color: white; /* Cor de fundo branca */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px; /* Espaçamento interno */
+    font-family: Arial, sans-serif; /* Fonte */
+    z-index: 4; /* Garantir que esteja acima de outros elementos */
+    border: 1px solid #ccc; /* Borda leve */
+}
+
+.definicoes-box h4 {
+    margin-bottom: 8px; /* Espaçamento entre o título e a lista */
+    font-size: 14px; /* Tamanho da fonte */
+    font-weight: bold;
+}
+
+.definicoes-box ul {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding-left: 0;
+}
+
+.definicoes-box li {
+    margin-bottom: 10px;
+    font-size: 9px; /* Tamanho da fonte para o texto */
+}
+
+.definicoes-box li strong {
+    font-weight: bold; /* Destaque para os títulos */
+}

@@ -1,0 +1,2286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_34da13300d12993f7d58971939c9a3e0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_34da13300d12993f7d58971939c9a3e0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_34da13300d12993f7d58971939c9a3e0 = L.map(
+                "map_34da13300d12993f7d58971939c9a3e0",
+                {
+                    center: [-23.5, -46.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2ff5718c6dacc8b5800991b4d4ab5853 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 10, "minZoom": 4, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_2ff5718c6dacc8b5800991b4d4ab5853.addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var marker_225fd55a7d4d87915000ffbfaf5391db = L.marker(
+                [-22.85731, -42.98135],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_6a5dd27bac34bde16d29094f4a54bdfa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_225fd55a7d4d87915000ffbfaf5391db.setIcon(icon_6a5dd27bac34bde16d29094f4a54bdfa);
+        
+    
+        var popup_a78bb4173959b0f886e5a54f076745ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f4c3ad61f8d73a2a0e0b1392b6a2a2b = $(`<div id="html_8f4c3ad61f8d73a2a0e0b1392b6a2a2b" style="width: 100.0%; height: 100.0%;">     Municipality: SÃO GONÇALO<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-01 4:23:00<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 0.7     </div>`)[0];
+                popup_a78bb4173959b0f886e5a54f076745ed.setContent(html_8f4c3ad61f8d73a2a0e0b1392b6a2a2b);
+            
+        
+
+        marker_225fd55a7d4d87915000ffbfaf5391db.bindPopup(popup_a78bb4173959b0f886e5a54f076745ed)
+        ;
+
+        
+    
+    
+            var marker_dffd074fc391718409eac7ffc0cacd6d = L.marker(
+                [-22.43943, -44.38149],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_d6261a0592f40109499fc4dbeee9b9cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dffd074fc391718409eac7ffc0cacd6d.setIcon(icon_d6261a0592f40109499fc4dbeee9b9cc);
+        
+    
+        var popup_b6539c214c26ee0814a2b5f7bb05aa29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a2de36a68e97df8f440bbf48192330c = $(`<div id="html_8a2de36a68e97df8f440bbf48192330c" style="width: 100.0%; height: 100.0%;">     Municipality: RESENDE<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-01 16:52:00<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 3.7     </div>`)[0];
+                popup_b6539c214c26ee0814a2b5f7bb05aa29.setContent(html_8a2de36a68e97df8f440bbf48192330c);
+            
+        
+
+        marker_dffd074fc391718409eac7ffc0cacd6d.bindPopup(popup_b6539c214c26ee0814a2b5f7bb05aa29)
+        ;
+
+        
+    
+    
+            var marker_cdf2d07fbc4850dfc310d237008b4a93 = L.marker(
+                [-22.85707, -42.9796],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_fc775c1a2f73ba86c457065681ed3706 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cdf2d07fbc4850dfc310d237008b4a93.setIcon(icon_fc775c1a2f73ba86c457065681ed3706);
+        
+    
+        var popup_86883115cb2cbd7760cc46cac1c4ea9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b6b4b3701fcf92cef0f95add7e42862 = $(`<div id="html_2b6b4b3701fcf92cef0f95add7e42862" style="width: 100.0%; height: 100.0%;">     Municipality: SÃO GONÇALO<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-02 4:04:00<br>     Days without rain: -999.0<br>     Precipitation: 0.0<br>     Fire Risk: 0.87<br>     Biome: Mata Atlântica<br>     FRP: 0.7     </div>`)[0];
+                popup_86883115cb2cbd7760cc46cac1c4ea9a.setContent(html_2b6b4b3701fcf92cef0f95add7e42862);
+            
+        
+
+        marker_cdf2d07fbc4850dfc310d237008b4a93.bindPopup(popup_86883115cb2cbd7760cc46cac1c4ea9a)
+        ;
+
+        
+    
+    
+            var marker_8bf181184eadb30518ec963d2f9a4a5b = L.marker(
+                [-22.43874, -44.37753],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_e9c1515a9d3a10a2f3e4b6af5f4a11ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8bf181184eadb30518ec963d2f9a4a5b.setIcon(icon_e9c1515a9d3a10a2f3e4b6af5f4a11ae);
+        
+    
+        var popup_1ea836e08799e5049111b7674a42132c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94416bf601206cb2de0c28f84d351161 = $(`<div id="html_94416bf601206cb2de0c28f84d351161" style="width: 100.0%; height: 100.0%;">     Municipality: RESENDE<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-02 13:01:00<br>     Days without rain: 0.0<br>     Precipitation: 0.0<br>     Fire Risk: -999.0<br>     Biome: Mata Atlântica<br>     FRP: 7.8     </div>`)[0];
+                popup_1ea836e08799e5049111b7674a42132c.setContent(html_94416bf601206cb2de0c28f84d351161);
+            
+        
+
+        marker_8bf181184eadb30518ec963d2f9a4a5b.bindPopup(popup_1ea836e08799e5049111b7674a42132c)
+        ;
+
+        
+    
+    
+            var marker_d12262d553482dc15b13e46b6ce0642c = L.marker(
+                [-22.4669, -42.65048],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_bb4da6cd1d88993354abd80d1f1d7050 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d12262d553482dc15b13e46b6ce0642c.setIcon(icon_bb4da6cd1d88993354abd80d1f1d7050);
+        
+    
+        var popup_3989bc3b5f62c63df88e99368b041730 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_112361dd647df6440a8c7ef224cf4502 = $(`<div id="html_112361dd647df6440a8c7ef224cf4502" style="width: 100.0%; height: 100.0%;">     Municipality: CACHOEIRAS DE MACACU<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-02 13:01:00<br>     Days without rain: 0.0<br>     Precipitation: 0.0<br>     Fire Risk: 0.0<br>     Biome: Mata Atlântica<br>     FRP: 9.2     </div>`)[0];
+                popup_3989bc3b5f62c63df88e99368b041730.setContent(html_112361dd647df6440a8c7ef224cf4502);
+            
+        
+
+        marker_d12262d553482dc15b13e46b6ce0642c.bindPopup(popup_3989bc3b5f62c63df88e99368b041730)
+        ;
+
+        
+    
+    
+            var marker_a820aeeeac73df7830098b0952dc24d4 = L.marker(
+                [-22.74908, -43.27428],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_296da0301780e291cdbc4f6bfb5c4455 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a820aeeeac73df7830098b0952dc24d4.setIcon(icon_296da0301780e291cdbc4f6bfb5c4455);
+        
+    
+        var popup_4fe438c841c203658625e6edfc179f45 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4730779f75265973f64b2c4dffe6551 = $(`<div id="html_e4730779f75265973f64b2c4dffe6551" style="width: 100.0%; height: 100.0%;">     Municipality: DUQUE DE CAXIAS<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-03 3:46:00<br>     Days without rain: -999.0<br>     Precipitation: 3.73<br>     Fire Risk: 0.01<br>     Biome: Mata Atlântica<br>     FRP: 0.7     </div>`)[0];
+                popup_4fe438c841c203658625e6edfc179f45.setContent(html_e4730779f75265973f64b2c4dffe6551);
+            
+        
+
+        marker_a820aeeeac73df7830098b0952dc24d4.bindPopup(popup_4fe438c841c203658625e6edfc179f45)
+        ;
+
+        
+    
+    
+            var marker_bcded3d4f98cc299614e5f49acea7058 = L.marker(
+                [-21.17128, -41.71574],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_9fae88439681822d256b0ef537b45bc5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bcded3d4f98cc299614e5f49acea7058.setIcon(icon_9fae88439681822d256b0ef537b45bc5);
+        
+    
+        var popup_533ffc5a1bb2c974e64e73dc2fada26f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2e6ec03a004f80780bc8e5c559f0af1 = $(`<div id="html_a2e6ec03a004f80780bc8e5c559f0af1" style="width: 100.0%; height: 100.0%;">     Municipality: BOM JESUS DO ITABAPOANA<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-03 16:13:00<br>     Days without rain: 1.0<br>     Precipitation: 13.82<br>     Fire Risk: 0.0<br>     Biome: Mata Atlântica<br>     FRP: 13.9     </div>`)[0];
+                popup_533ffc5a1bb2c974e64e73dc2fada26f.setContent(html_a2e6ec03a004f80780bc8e5c559f0af1);
+            
+        
+
+        marker_bcded3d4f98cc299614e5f49acea7058.bindPopup(popup_533ffc5a1bb2c974e64e73dc2fada26f)
+        ;
+
+        
+    
+    
+            var marker_d168d86747a712015a59d81080f473ed = L.marker(
+                [-22.44193, -44.38123],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_f0a1351fdf2f8b35d34eb0a43bbe5f8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d168d86747a712015a59d81080f473ed.setIcon(icon_f0a1351fdf2f8b35d34eb0a43bbe5f8f);
+        
+    
+        var popup_9fc54246386b48f5d42c8a1af0dfbe25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56f1c26364d2d5eda1aa24fb3541add8 = $(`<div id="html_56f1c26364d2d5eda1aa24fb3541add8" style="width: 100.0%; height: 100.0%;">     Municipality: RESENDE<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-03 16:13:00<br>     Days without rain: 1.0<br>     Precipitation: 0.04<br>     Fire Risk: -999.0<br>     Biome: Mata Atlântica<br>     FRP: 5.3     </div>`)[0];
+                popup_9fc54246386b48f5d42c8a1af0dfbe25.setContent(html_56f1c26364d2d5eda1aa24fb3541add8);
+            
+        
+
+        marker_d168d86747a712015a59d81080f473ed.bindPopup(popup_9fc54246386b48f5d42c8a1af0dfbe25)
+        ;
+
+        
+    
+    
+            var marker_82887a2acf9751ec313afeebc9407e0a = L.marker(
+                [-21.40428, -41.31716],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_19263337ee0368953a5d9bea79dec9c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_82887a2acf9751ec313afeebc9407e0a.setIcon(icon_19263337ee0368953a5d9bea79dec9c0);
+        
+    
+        var popup_0000d33831d30bd0d3a0df7496907106 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5840b6222db3df7a758b8c1e36c20595 = $(`<div id="html_5840b6222db3df7a758b8c1e36c20595" style="width: 100.0%; height: 100.0%;">     Municipality: CAMPOS DOS GOYTACAZES<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-03 17:06:00<br>     Days without rain: 0.0<br>     Precipitation: 0.47<br>     Fire Risk: 0.15<br>     Biome: Mata Atlântica<br>     FRP: 3.7     </div>`)[0];
+                popup_0000d33831d30bd0d3a0df7496907106.setContent(html_5840b6222db3df7a758b8c1e36c20595);
+            
+        
+
+        marker_82887a2acf9751ec313afeebc9407e0a.bindPopup(popup_0000d33831d30bd0d3a0df7496907106)
+        ;
+
+        
+    
+    
+            var marker_1a1bbdc4d1d5bd3901fff84e3dd2425c = L.marker(
+                [-21.40792, -41.31449],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_4ba27d0f3c326c0bc1eae3f5cfdb608a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1a1bbdc4d1d5bd3901fff84e3dd2425c.setIcon(icon_4ba27d0f3c326c0bc1eae3f5cfdb608a);
+        
+    
+        var popup_9b6a1bfb2601bbdf15966afc3222e5a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5550b149a0987fa9776619c75b0d555 = $(`<div id="html_b5550b149a0987fa9776619c75b0d555" style="width: 100.0%; height: 100.0%;">     Municipality: CAMPOS DOS GOYTACAZES<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-03 17:06:00<br>     Days without rain: 0.0<br>     Precipitation: 0.45<br>     Fire Risk: 0.15<br>     Biome: Mata Atlântica<br>     FRP: 2.9     </div>`)[0];
+                popup_9b6a1bfb2601bbdf15966afc3222e5a3.setContent(html_b5550b149a0987fa9776619c75b0d555);
+            
+        
+
+        marker_1a1bbdc4d1d5bd3901fff84e3dd2425c.bindPopup(popup_9b6a1bfb2601bbdf15966afc3222e5a3)
+        ;
+
+        
+    
+    
+            var marker_907336c107b7dcecffdd262391816d99 = L.marker(
+                [-21.46062, -41.06577],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_d75cfbc70d119b71ad69909385256835 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_907336c107b7dcecffdd262391816d99.setIcon(icon_d75cfbc70d119b71ad69909385256835);
+        
+    
+        var popup_e616c5f21d91875962c69b105d7aaabd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63f69e796fdf3115cc39f25d3ad66d95 = $(`<div id="html_63f69e796fdf3115cc39f25d3ad66d95" style="width: 100.0%; height: 100.0%;">     Municipality: SÃO FRANCISCO DE ITABAPOANA<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-03 17:06:00<br>     Days without rain: 0.0<br>     Precipitation: 0.0<br>     Fire Risk: 0.17<br>     Biome: Mata Atlântica<br>     FRP: 3.7     </div>`)[0];
+                popup_e616c5f21d91875962c69b105d7aaabd.setContent(html_63f69e796fdf3115cc39f25d3ad66d95);
+            
+        
+
+        marker_907336c107b7dcecffdd262391816d99.bindPopup(popup_e616c5f21d91875962c69b105d7aaabd)
+        ;
+
+        
+    
+    
+            var marker_5ababfafb55ff42a2e153648cc984bb9 = L.marker(
+                [-21.78391, -42.34938],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_faf4382c1cc2cb0eaea3b6ba299bd3e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5ababfafb55ff42a2e153648cc984bb9.setIcon(icon_faf4382c1cc2cb0eaea3b6ba299bd3e9);
+        
+    
+        var popup_00a9272e82dac11719890b700fa88473 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ecc12fa30cb06cd5b67c26c427618600 = $(`<div id="html_ecc12fa30cb06cd5b67c26c427618600" style="width: 100.0%; height: 100.0%;">     Municipality: CANTAGALO<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-03 17:06:00<br>     Days without rain: 2.0<br>     Precipitation: 4.21<br>     Fire Risk: 0.25<br>     Biome: Mata Atlântica<br>     FRP: 5.7     </div>`)[0];
+                popup_00a9272e82dac11719890b700fa88473.setContent(html_ecc12fa30cb06cd5b67c26c427618600);
+            
+        
+
+        marker_5ababfafb55ff42a2e153648cc984bb9.bindPopup(popup_00a9272e82dac11719890b700fa88473)
+        ;
+
+        
+    
+    
+            var marker_0b14e1d141b72c96a68ae4996e129f73 = L.marker(
+                [-21.56949, -41.71711],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_d2948bac421a6de6fc59c4e91a5cd3f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0b14e1d141b72c96a68ae4996e129f73.setIcon(icon_d2948bac421a6de6fc59c4e91a5cd3f8);
+        
+    
+        var popup_8ba0aa5a6455c03e58555b8f02f26d6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b7e47de2b5d0817532f294b5a7d8a6c = $(`<div id="html_6b7e47de2b5d0817532f294b5a7d8a6c" style="width: 100.0%; height: 100.0%;">     Municipality: SÃO FIDÉLIS<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-05 16:28:00<br>     Days without rain: 0.0<br>     Precipitation: 34.26<br>     Fire Risk: 0.0<br>     Biome: Mata Atlântica<br>     FRP: 3.4     </div>`)[0];
+                popup_8ba0aa5a6455c03e58555b8f02f26d6f.setContent(html_6b7e47de2b5d0817532f294b5a7d8a6c);
+            
+        
+
+        marker_0b14e1d141b72c96a68ae4996e129f73.bindPopup(popup_8ba0aa5a6455c03e58555b8f02f26d6f)
+        ;
+
+        
+    
+    
+            var marker_50310113c75a3a16c30def0d157feb2e = L.marker(
+                [-21.37029, -41.00051],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_50315629481ab1f5c465f2fff20918e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_50310113c75a3a16c30def0d157feb2e.setIcon(icon_50315629481ab1f5c465f2fff20918e9);
+        
+    
+        var popup_a3e901c63d1cfcba3e175e454ea1fb0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79fa6fb894f1193d47e687475957a842 = $(`<div id="html_79fa6fb894f1193d47e687475957a842" style="width: 100.0%; height: 100.0%;">     Municipality: SÃO FRANCISCO DE ITABAPOANA<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-09 16:02:00<br>     Days without rain: -999.0<br>     Precipitation: 9.23<br>     Fire Risk: 0.04<br>     Biome: Mata Atlântica<br>     FRP: 4.3     </div>`)[0];
+                popup_a3e901c63d1cfcba3e175e454ea1fb0c.setContent(html_79fa6fb894f1193d47e687475957a842);
+            
+        
+
+        marker_50310113c75a3a16c30def0d157feb2e.bindPopup(popup_a3e901c63d1cfcba3e175e454ea1fb0c)
+        ;
+
+        
+    
+    
+            var marker_836a14aa7c6789fcba9e9823d57f7ea0 = L.marker(
+                [-21.20164, -41.90422],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_8c47a179760036675ad0eca134353c3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_836a14aa7c6789fcba9e9823d57f7ea0.setIcon(icon_8c47a179760036675ad0eca134353c3b);
+        
+    
+        var popup_3798a8ec98ad9913fa1b22272e60eff0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_421ab7a9b5341fdcf1f037ae1a50d1cf = $(`<div id="html_421ab7a9b5341fdcf1f037ae1a50d1cf" style="width: 100.0%; height: 100.0%;">     Municipality: ITAPERUNA<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-13 16:47:00<br>     Days without rain: 0.0<br>     Precipitation: 2.22<br>     Fire Risk: -999.0<br>     Biome: Mata Atlântica<br>     FRP: 8.4     </div>`)[0];
+                popup_3798a8ec98ad9913fa1b22272e60eff0.setContent(html_421ab7a9b5341fdcf1f037ae1a50d1cf);
+            
+        
+
+        marker_836a14aa7c6789fcba9e9823d57f7ea0.bindPopup(popup_3798a8ec98ad9913fa1b22272e60eff0)
+        ;
+
+        
+    
+    
+            var marker_5b47bd00bf474146d9ff0395e304f924 = L.marker(
+                [-22.744, -43.69918],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_699f045e1e6521a44d512fd75dcb162b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5b47bd00bf474146d9ff0395e304f924.setIcon(icon_699f045e1e6521a44d512fd75dcb162b);
+        
+    
+        var popup_fb38342c0bcef5091e4bd3e81b75a476 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8bb9212da7e59f733882791d10a38aeb = $(`<div id="html_8bb9212da7e59f733882791d10a38aeb" style="width: 100.0%; height: 100.0%;">     Municipality: SEROPÉDICA<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-13 16:47:00<br>     Days without rain: 3.0<br>     Precipitation: 63.37<br>     Fire Risk: -999.0<br>     Biome: Mata Atlântica<br>     FRP: 7.5     </div>`)[0];
+                popup_fb38342c0bcef5091e4bd3e81b75a476.setContent(html_8bb9212da7e59f733882791d10a38aeb);
+            
+        
+
+        marker_5b47bd00bf474146d9ff0395e304f924.bindPopup(popup_fb38342c0bcef5091e4bd3e81b75a476)
+        ;
+
+        
+    
+    
+            var marker_af23ac7b429fb99ba00df456c830aff1 = L.marker(
+                [-22.44094, -44.38794],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_e7c4d42d48fd34d4a0f12b2d0b5e6967 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_af23ac7b429fb99ba00df456c830aff1.setIcon(icon_e7c4d42d48fd34d4a0f12b2d0b5e6967);
+        
+    
+        var popup_4bede5cba78c1eba98d4f4995f84fa6d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_768ddc0e38e1c4d336842564611c3ca7 = $(`<div id="html_768ddc0e38e1c4d336842564611c3ca7" style="width: 100.0%; height: 100.0%;">     Municipality: RESENDE<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-13 16:47:00<br>     Days without rain: 1.0<br>     Precipitation: 62.41<br>     Fire Risk: 0.0<br>     Biome: Mata Atlântica<br>     FRP: 7.7     </div>`)[0];
+                popup_4bede5cba78c1eba98d4f4995f84fa6d.setContent(html_768ddc0e38e1c4d336842564611c3ca7);
+            
+        
+
+        marker_af23ac7b429fb99ba00df456c830aff1.bindPopup(popup_4bede5cba78c1eba98d4f4995f84fa6d)
+        ;
+
+        
+    
+    
+            var marker_c8b6cb6260f9b52df61f0546d291a3a9 = L.marker(
+                [-22.85728, -42.98167],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_f20f15f99a748e9ec4d35f30e42168fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c8b6cb6260f9b52df61f0546d291a3a9.setIcon(icon_f20f15f99a748e9ec4d35f30e42168fc);
+        
+    
+        var popup_ce5226d5e3e0c34f840e1b456f089c55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8714ec7c8a5af4c569aff0e4210c332e = $(`<div id="html_8714ec7c8a5af4c569aff0e4210c332e" style="width: 100.0%; height: 100.0%;">     Municipality: SÃO GONÇALO<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-14 3:40:00<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 0.6     </div>`)[0];
+                popup_ce5226d5e3e0c34f840e1b456f089c55.setContent(html_8714ec7c8a5af4c569aff0e4210c332e);
+            
+        
+
+        marker_c8b6cb6260f9b52df61f0546d291a3a9.bindPopup(popup_ce5226d5e3e0c34f840e1b456f089c55)
+        ;
+
+        
+    
+    
+            var marker_8c57919836931263ca885563c6435015 = L.marker(
+                [-22.625, -43.22391],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_3375cd7da855008617f15bd292dc8562 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8c57919836931263ca885563c6435015.setIcon(icon_3375cd7da855008617f15bd292dc8562);
+        
+    
+        var popup_b09d244e96798232f4897d13026d74aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7faa2c8b89b45ea529daeb6d9c16a86c = $(`<div id="html_7faa2c8b89b45ea529daeb6d9c16a86c" style="width: 100.0%; height: 100.0%;">     Municipality: DUQUE DE CAXIAS<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-14 17:00:00<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 3.4     </div>`)[0];
+                popup_b09d244e96798232f4897d13026d74aa.setContent(html_7faa2c8b89b45ea529daeb6d9c16a86c);
+            
+        
+
+        marker_8c57919836931263ca885563c6435015.bindPopup(popup_b09d244e96798232f4897d13026d74aa)
+        ;
+
+        
+    
+    
+            var marker_77e901ffcb6dfbb7bc070cd444626201 = L.marker(
+                [-22.11571, -41.4406],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_aa1b66f9740da3edcd449763b9f19762 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_77e901ffcb6dfbb7bc070cd444626201.setIcon(icon_aa1b66f9740da3edcd449763b9f19762);
+        
+    
+        var popup_34a6ec38d3a11b480ad920b7a6431153 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9327027d75bb953602baaab66639b2b8 = $(`<div id="html_9327027d75bb953602baaab66639b2b8" style="width: 100.0%; height: 100.0%;">     Municipality: QUISSAMÃ<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-15 3:19:00<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 1.2     </div>`)[0];
+                popup_34a6ec38d3a11b480ad920b7a6431153.setContent(html_9327027d75bb953602baaab66639b2b8);
+            
+        
+
+        marker_77e901ffcb6dfbb7bc070cd444626201.bindPopup(popup_34a6ec38d3a11b480ad920b7a6431153)
+        ;
+
+        
+    
+    
+            var marker_264916df05f11e74bcb5ac56e0542146 = L.marker(
+                [-22.11506, -41.44367],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_4e34002f513bfb792637ce61355b8c26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_264916df05f11e74bcb5ac56e0542146.setIcon(icon_4e34002f513bfb792637ce61355b8c26);
+        
+    
+        var popup_3b0885c637532884a15894c252a357ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4fbf37b9b28edf3dd77ffbdfbc0883c1 = $(`<div id="html_4fbf37b9b28edf3dd77ffbdfbc0883c1" style="width: 100.0%; height: 100.0%;">     Municipality: QUISSAMÃ<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-15 3:19:00<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 0.9     </div>`)[0];
+                popup_3b0885c637532884a15894c252a357ea.setContent(html_4fbf37b9b28edf3dd77ffbdfbc0883c1);
+            
+        
+
+        marker_264916df05f11e74bcb5ac56e0542146.bindPopup(popup_3b0885c637532884a15894c252a357ea)
+        ;
+
+        
+    
+    
+            var marker_e01b43b8fe171558f47431b9ad0973cd = L.marker(
+                [-22.78526, -43.75802],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_3c79f4e78cfd3d5a11a9acd2e1451f8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e01b43b8fe171558f47431b9ad0973cd.setIcon(icon_3c79f4e78cfd3d5a11a9acd2e1451f8b);
+        
+    
+        var popup_05c740160d9a4655b5b7c587abfea7c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b12e2c3d37e1765149b4962ecce7da2 = $(`<div id="html_3b12e2c3d37e1765149b4962ecce7da2" style="width: 100.0%; height: 100.0%;">     Municipality: SEROPÉDICA<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-15 4:14:00<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 0.7     </div>`)[0];
+                popup_05c740160d9a4655b5b7c587abfea7c3.setContent(html_3b12e2c3d37e1765149b4962ecce7da2);
+            
+        
+
+        marker_e01b43b8fe171558f47431b9ad0973cd.bindPopup(popup_05c740160d9a4655b5b7c587abfea7c3)
+        ;
+
+        
+    
+    
+            var marker_b7c8d16a4d4d49eb675a0bc087e513e1 = L.marker(
+                [-22.7956, -43.3111],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_ac23576fdf0c2d17aad2ae05dd8aa136 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b7c8d16a4d4d49eb675a0bc087e513e1.setIcon(icon_ac23576fdf0c2d17aad2ae05dd8aa136);
+        
+    
+        var popup_943573d34f4e5ed4f615e1b140f9d85e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e80935b170110d21eb29ebb5b35f21b5 = $(`<div id="html_e80935b170110d21eb29ebb5b35f21b5" style="width: 100.0%; height: 100.0%;">     Municipality: DUQUE DE CAXIAS<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-15 14:57:11<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 105.6     </div>`)[0];
+                popup_943573d34f4e5ed4f615e1b140f9d85e.setContent(html_e80935b170110d21eb29ebb5b35f21b5);
+            
+        
+
+        marker_b7c8d16a4d4d49eb675a0bc087e513e1.bindPopup(popup_943573d34f4e5ed4f615e1b140f9d85e)
+        ;
+
+        
+    
+    
+            var marker_3b4d9ee040cc72b6bbc4724394d13989 = L.marker(
+                [-22.8353, -43.3746],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_9f310785097ef64174aa1a6677fbc731 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3b4d9ee040cc72b6bbc4724394d13989.setIcon(icon_9f310785097ef64174aa1a6677fbc731);
+        
+    
+        var popup_c37d658c37a369f5527cd65c1a0b5551 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f771d0b8e6c7943295d4fc3beba8ff6d = $(`<div id="html_f771d0b8e6c7943295d4fc3beba8ff6d" style="width: 100.0%; height: 100.0%;">     Municipality: RIO DE JANEIRO<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-15 15:07:11<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 100.9     </div>`)[0];
+                popup_c37d658c37a369f5527cd65c1a0b5551.setContent(html_f771d0b8e6c7943295d4fc3beba8ff6d);
+            
+        
+
+        marker_3b4d9ee040cc72b6bbc4724394d13989.bindPopup(popup_c37d658c37a369f5527cd65c1a0b5551)
+        ;
+
+        
+    
+    
+            var marker_5086fcf29a811293c11b96cfb27b02d8 = L.marker(
+                [-22.8916, -43.5591],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_6c3ffdd4ff52ac9272c63540e80bc629 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5086fcf29a811293c11b96cfb27b02d8.setIcon(icon_6c3ffdd4ff52ac9272c63540e80bc629);
+        
+    
+        var popup_59b7535b782bb1aa4ac5e970a1dfaa67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_047db596b6fecd388a9e18d03afb31d9 = $(`<div id="html_047db596b6fecd388a9e18d03afb31d9" style="width: 100.0%; height: 100.0%;">     Municipality: RIO DE JANEIRO<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-15 15:07:12<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 102.2     </div>`)[0];
+                popup_59b7535b782bb1aa4ac5e970a1dfaa67.setContent(html_047db596b6fecd388a9e18d03afb31d9);
+            
+        
+
+        marker_5086fcf29a811293c11b96cfb27b02d8.bindPopup(popup_59b7535b782bb1aa4ac5e970a1dfaa67)
+        ;
+
+        
+    
+    
+            var marker_24c1e3e0a0382e6e6aae1d6ca7d7c105 = L.marker(
+                [-22.98009, -44.29653],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_f28550dff614b340712b96872a30c442 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_24c1e3e0a0382e6e6aae1d6ca7d7c105.setIcon(icon_f28550dff614b340712b96872a30c442);
+        
+    
+        var popup_96dc582c1b1c41d6f872b57e23b0073d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6555b911fa2cff049c33c2475e35e03 = $(`<div id="html_d6555b911fa2cff049c33c2475e35e03" style="width: 100.0%; height: 100.0%;">     Municipality: ANGRA DOS REIS<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-15 16:34:00<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 17.0     </div>`)[0];
+                popup_96dc582c1b1c41d6f872b57e23b0073d.setContent(html_d6555b911fa2cff049c33c2475e35e03);
+            
+        
+
+        marker_24c1e3e0a0382e6e6aae1d6ca7d7c105.bindPopup(popup_96dc582c1b1c41d6f872b57e23b0073d)
+        ;
+
+        
+    
+    
+            var marker_c7eb16772784af96c64080fceefc2571 = L.marker(
+                [-22.5292, -42.97943],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_fdc98404f1a4da5312967877e14820f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c7eb16772784af96c64080fceefc2571.setIcon(icon_fdc98404f1a4da5312967877e14820f9);
+        
+    
+        var popup_00b51fe9b4997a0ddf7feea9263860ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e65a55828c0ccdfd04c8ca9d0eac6625 = $(`<div id="html_e65a55828c0ccdfd04c8ca9d0eac6625" style="width: 100.0%; height: 100.0%;">     Municipality: GUAPIMIRIM<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-15 16:34:00<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 14.1     </div>`)[0];
+                popup_00b51fe9b4997a0ddf7feea9263860ad.setContent(html_e65a55828c0ccdfd04c8ca9d0eac6625);
+            
+        
+
+        marker_c7eb16772784af96c64080fceefc2571.bindPopup(popup_00b51fe9b4997a0ddf7feea9263860ad)
+        ;
+
+        
+    
+    
+            var marker_2a0ac4deb12234fe679f9b8837da3fb5 = L.marker(
+                [-22.87507, -43.7841],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_02dcb2304cc1ea2c3b1674c9fc4e4251 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2a0ac4deb12234fe679f9b8837da3fb5.setIcon(icon_02dcb2304cc1ea2c3b1674c9fc4e4251);
+        
+    
+        var popup_f5e40dc9a4e3084ab68889e73defc946 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4b824d7f59b5088428b28d2afaa90f8 = $(`<div id="html_d4b824d7f59b5088428b28d2afaa90f8" style="width: 100.0%; height: 100.0%;">     Municipality: ITAGUAÍ<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-15 16:34:00<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 13.3     </div>`)[0];
+                popup_f5e40dc9a4e3084ab68889e73defc946.setContent(html_d4b824d7f59b5088428b28d2afaa90f8);
+            
+        
+
+        marker_2a0ac4deb12234fe679f9b8837da3fb5.bindPopup(popup_f5e40dc9a4e3084ab68889e73defc946)
+        ;
+
+        
+    
+    
+            var marker_5a0e2f9b1726d9cf1072862b86f84d9b = L.marker(
+                [-22.94679, -43.56734],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_32a9a722f2d81131e077afce89888d7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5a0e2f9b1726d9cf1072862b86f84d9b.setIcon(icon_32a9a722f2d81131e077afce89888d7d);
+        
+    
+        var popup_aaae757e7c84bbae1b69ca771495fe74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4feaeef1aec920577358127fa0a2169e = $(`<div id="html_4feaeef1aec920577358127fa0a2169e" style="width: 100.0%; height: 100.0%;">     Municipality: RIO DE JANEIRO<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-15 16:43:00<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 5.3     </div>`)[0];
+                popup_aaae757e7c84bbae1b69ca771495fe74.setContent(html_4feaeef1aec920577358127fa0a2169e);
+            
+        
+
+        marker_5a0e2f9b1726d9cf1072862b86f84d9b.bindPopup(popup_aaae757e7c84bbae1b69ca771495fe74)
+        ;
+
+        
+    
+    
+            var marker_21980348b4b3eb0972b90b93e8439eee = L.marker(
+                [-22.63503, -43.90832],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_ef76a978a3e5a0e295e16e8f170b0fa0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_21980348b4b3eb0972b90b93e8439eee.setIcon(icon_ef76a978a3e5a0e295e16e8f170b0fa0);
+        
+    
+        var popup_cbee08260cefc548731a2329c42572b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79c127dfab5d6b1887f56ea4f7e70bd9 = $(`<div id="html_79c127dfab5d6b1887f56ea4f7e70bd9" style="width: 100.0%; height: 100.0%;">     Municipality: PIRAÍ<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-15 16:43:00<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 2.1     </div>`)[0];
+                popup_cbee08260cefc548731a2329c42572b5.setContent(html_79c127dfab5d6b1887f56ea4f7e70bd9);
+            
+        
+
+        marker_21980348b4b3eb0972b90b93e8439eee.bindPopup(popup_cbee08260cefc548731a2329c42572b5)
+        ;
+
+        
+    
+    
+            var marker_520997b28400ca27ad2d6656fbd1abb3 = L.marker(
+                [-22.44049, -44.37924],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_e76ebcd4c4a127d0d64d37be414da426 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_520997b28400ca27ad2d6656fbd1abb3.setIcon(icon_e76ebcd4c4a127d0d64d37be414da426);
+        
+    
+        var popup_045d12eed7c25fe6f5b6fa4cf2559db8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd31eaa0110f6c4b850bdd704fb1bc1e = $(`<div id="html_dd31eaa0110f6c4b850bdd704fb1bc1e" style="width: 100.0%; height: 100.0%;">     Municipality: RESENDE<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-15 16:43:00<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 3.4     </div>`)[0];
+                popup_045d12eed7c25fe6f5b6fa4cf2559db8.setContent(html_dd31eaa0110f6c4b850bdd704fb1bc1e);
+            
+        
+
+        marker_520997b28400ca27ad2d6656fbd1abb3.bindPopup(popup_045d12eed7c25fe6f5b6fa4cf2559db8)
+        ;
+
+        
+    
+    
+            var marker_28a797f313a44d7b5415b4881e8e5bbc = L.marker(
+                [-22.11374, -41.43218],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_a0d1d3214fa78b1183161f10c9c4705e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_28a797f313a44d7b5415b4881e8e5bbc.setIcon(icon_a0d1d3214fa78b1183161f10c9c4705e);
+        
+    
+        var popup_7a8887f74c58f1aecff483f1f83d6262 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6daa5eea9c2b617e73363aaf29ab791e = $(`<div id="html_6daa5eea9c2b617e73363aaf29ab791e" style="width: 100.0%; height: 100.0%;">     Municipality: QUISSAMÃ<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-15 16:43:00<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 2.2     </div>`)[0];
+                popup_7a8887f74c58f1aecff483f1f83d6262.setContent(html_6daa5eea9c2b617e73363aaf29ab791e);
+            
+        
+
+        marker_28a797f313a44d7b5415b4881e8e5bbc.bindPopup(popup_7a8887f74c58f1aecff483f1f83d6262)
+        ;
+
+        
+    
+    
+            var marker_07281a994ce15513414ad415cd40d2a7 = L.marker(
+                [-22.90083, -43.75356],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_5a9df4bcf27dfff413ad801bd5e88d27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_07281a994ce15513414ad415cd40d2a7.setIcon(icon_5a9df4bcf27dfff413ad801bd5e88d27);
+        
+    
+        var popup_b8f32a4cb6acfd48dbd1a3014220e5c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df89297759ae2be16e18ba9b7c2d2a33 = $(`<div id="html_df89297759ae2be16e18ba9b7c2d2a33" style="width: 100.0%; height: 100.0%;">     Municipality: RIO DE JANEIRO<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-16 3:53:00<br>     Days without rain: 2.0<br>     Precipitation: 0.0<br>     Fire Risk: -999.0<br>     Biome: Mata Atlântica<br>     FRP: 4.9     </div>`)[0];
+                popup_b8f32a4cb6acfd48dbd1a3014220e5c7.setContent(html_df89297759ae2be16e18ba9b7c2d2a33);
+            
+        
+
+        marker_07281a994ce15513414ad415cd40d2a7.bindPopup(popup_b8f32a4cb6acfd48dbd1a3014220e5c7)
+        ;
+
+        
+    
+    
+            var marker_d7dc0552892638b1d0ee4688a4302b74 = L.marker(
+                [-22.85816, -42.98033],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_d71035f257add63131bf6728681a56ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d7dc0552892638b1d0ee4688a4302b74.setIcon(icon_d71035f257add63131bf6728681a56ab);
+        
+    
+        var popup_934c44995de2786aef7df0dc36aa4c07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b417f0ab7366b14eadef213d1ab92773 = $(`<div id="html_b417f0ab7366b14eadef213d1ab92773" style="width: 100.0%; height: 100.0%;">     Municipality: SÃO GONÇALO<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-16 3:53:00<br>     Days without rain: -999.0<br>     Precipitation: 0.0<br>     Fire Risk: 0.16<br>     Biome: Mata Atlântica<br>     FRP: 1.1     </div>`)[0];
+                popup_934c44995de2786aef7df0dc36aa4c07.setContent(html_b417f0ab7366b14eadef213d1ab92773);
+            
+        
+
+        marker_d7dc0552892638b1d0ee4688a4302b74.bindPopup(popup_934c44995de2786aef7df0dc36aa4c07)
+        ;
+
+        
+    
+    
+            var marker_1e96b7c461a33e49ada0f61e9aa73800 = L.marker(
+                [-22.58253, -43.03658],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_ed3370a4a1dcff0d3768ac87542a7127 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1e96b7c461a33e49ada0f61e9aa73800.setIcon(icon_ed3370a4a1dcff0d3768ac87542a7127);
+        
+    
+        var popup_9c036bf9e9b69ba7e37f7758977bf208 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d48ef5973b77a21d2f89f3794205689c = $(`<div id="html_d48ef5973b77a21d2f89f3794205689c" style="width: 100.0%; height: 100.0%;">     Municipality: MAGÉ<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-16 16:22:00<br>     Days without rain: -999.0<br>     Precipitation: 0.0<br>     Fire Risk: 0.0<br>     Biome: Mata Atlântica<br>     FRP: 9.0     </div>`)[0];
+                popup_9c036bf9e9b69ba7e37f7758977bf208.setContent(html_d48ef5973b77a21d2f89f3794205689c);
+            
+        
+
+        marker_1e96b7c461a33e49ada0f61e9aa73800.bindPopup(popup_9c036bf9e9b69ba7e37f7758977bf208)
+        ;
+
+        
+    
+    
+            var marker_2a9eaaf0545eaf37d3f184a2f16c3b94 = L.marker(
+                [-22.82628, -42.83855],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_8eae13fd8c644e87aad89b219e42675a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2a9eaaf0545eaf37d3f184a2f16c3b94.setIcon(icon_8eae13fd8c644e87aad89b219e42675a);
+        
+    
+        var popup_df576aa3612e8ca38e96d7a5a06ce30c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c685e0f63d3c87741122efc32fc030a1 = $(`<div id="html_c685e0f63d3c87741122efc32fc030a1" style="width: 100.0%; height: 100.0%;">     Municipality: ITABORAÍ<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-16 17:11:00<br>     Days without rain: 2.0<br>     Precipitation: 0.0<br>     Fire Risk: 0.12<br>     Biome: Mata Atlântica<br>     FRP: 0.9     </div>`)[0];
+                popup_df576aa3612e8ca38e96d7a5a06ce30c.setContent(html_c685e0f63d3c87741122efc32fc030a1);
+            
+        
+
+        marker_2a9eaaf0545eaf37d3f184a2f16c3b94.bindPopup(popup_df576aa3612e8ca38e96d7a5a06ce30c)
+        ;
+
+        
+    
+    
+            var marker_9738586fbf0776c584cd0e2e9553fb53 = L.marker(
+                [-22.67335, -42.85601],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_b79ae2ccfc7fa19ee7319233944ab4ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9738586fbf0776c584cd0e2e9553fb53.setIcon(icon_b79ae2ccfc7fa19ee7319233944ab4ed);
+        
+    
+        var popup_521dd078173741e03744d0f10aba7db0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_329a5d7b064ecdf11f593c7ab5419a52 = $(`<div id="html_329a5d7b064ecdf11f593c7ab5419a52" style="width: 100.0%; height: 100.0%;">     Municipality: ITABORAÍ<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-17 4:23:00<br>     Days without rain: 2.0<br>     Precipitation: 2.05<br>     Fire Risk: -999.0<br>     Biome: Mata Atlântica<br>     FRP: 0.9     </div>`)[0];
+                popup_521dd078173741e03744d0f10aba7db0.setContent(html_329a5d7b064ecdf11f593c7ab5419a52);
+            
+        
+
+        marker_9738586fbf0776c584cd0e2e9553fb53.bindPopup(popup_521dd078173741e03744d0f10aba7db0)
+        ;
+
+        
+    
+    
+            var marker_7b5ca318c603d72a321d572c0d38be30 = L.marker(
+                [-22.85611, -42.98058],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_e4ac3349566ef84cba4b2fcebf0c07d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7b5ca318c603d72a321d572c0d38be30.setIcon(icon_e4ac3349566ef84cba4b2fcebf0c07d6);
+        
+    
+        var popup_26c81eba0a24913e4a550ad99556fe54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_164a688afb9bbdbd929f38f1b3e9a1c0 = $(`<div id="html_164a688afb9bbdbd929f38f1b3e9a1c0" style="width: 100.0%; height: 100.0%;">     Municipality: SÃO GONÇALO<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-17 4:23:00<br>     Days without rain: -999.0<br>     Precipitation: 0.0<br>     Fire Risk: 0.35<br>     Biome: Mata Atlântica<br>     FRP: 0.6     </div>`)[0];
+                popup_26c81eba0a24913e4a550ad99556fe54.setContent(html_164a688afb9bbdbd929f38f1b3e9a1c0);
+            
+        
+
+        marker_7b5ca318c603d72a321d572c0d38be30.bindPopup(popup_26c81eba0a24913e4a550ad99556fe54)
+        ;
+
+        
+    
+    
+            var marker_afa8ad6ac43529d178ff1a5e4f2e8abd = L.marker(
+                [-22.4383, -44.38312],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_a2c5cbaebda87f444d44f0ae187e9b74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_afa8ad6ac43529d178ff1a5e4f2e8abd.setIcon(icon_a2c5cbaebda87f444d44f0ae187e9b74);
+        
+    
+        var popup_ed3acf4e6e44707abdb2ca07d4f126cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b591140307a3a9d81613b16263bfbe9 = $(`<div id="html_8b591140307a3a9d81613b16263bfbe9" style="width: 100.0%; height: 100.0%;">     Municipality: RESENDE<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-17 16:05:00<br>     Days without rain: 2.0<br>     Precipitation: 0.0<br>     Fire Risk: -999.0<br>     Biome: Mata Atlântica<br>     FRP: 3.4     </div>`)[0];
+                popup_ed3acf4e6e44707abdb2ca07d4f126cb.setContent(html_8b591140307a3a9d81613b16263bfbe9);
+            
+        
+
+        marker_afa8ad6ac43529d178ff1a5e4f2e8abd.bindPopup(popup_ed3acf4e6e44707abdb2ca07d4f126cb)
+        ;
+
+        
+    
+    
+            var marker_0783dbd6e98e81cc4b88c6f2c80d44e3 = L.marker(
+                [-21.64986, -41.63494],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_2d4941c0568a4f2fcaec6e97bb8c32d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0783dbd6e98e81cc4b88c6f2c80d44e3.setIcon(icon_2d4941c0568a4f2fcaec6e97bb8c32d6);
+        
+    
+        var popup_da0130592eee4ab3b022d8ec6db4eec3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db29156472ca431635d8edd1838e8679 = $(`<div id="html_db29156472ca431635d8edd1838e8679" style="width: 100.0%; height: 100.0%;">     Municipality: SÃO FIDÉLIS<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-17 16:52:00<br>     Days without rain: 3.0<br>     Precipitation: 0.0<br>     Fire Risk: 0.05<br>     Biome: Mata Atlântica<br>     FRP: 6.6     </div>`)[0];
+                popup_da0130592eee4ab3b022d8ec6db4eec3.setContent(html_db29156472ca431635d8edd1838e8679);
+            
+        
+
+        marker_0783dbd6e98e81cc4b88c6f2c80d44e3.bindPopup(popup_da0130592eee4ab3b022d8ec6db4eec3)
+        ;
+
+        
+    
+    
+            var marker_6b7eff64445d23ad4cd74e3f85593e62 = L.marker(
+                [-22.26716, -41.81561],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_39ca5990365939a091bd7b762fadeb7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6b7eff64445d23ad4cd74e3f85593e62.setIcon(icon_39ca5990365939a091bd7b762fadeb7f);
+        
+    
+        var popup_2b290d37b465b350ec791355e4d47b13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9ffa6118123dd582396ceffc3aee97b = $(`<div id="html_e9ffa6118123dd582396ceffc3aee97b" style="width: 100.0%; height: 100.0%;">     Municipality: MACAÉ<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-17 16:52:00<br>     Days without rain: 3.0<br>     Precipitation: 0.0<br>     Fire Risk: 0.36<br>     Biome: Mata Atlântica<br>     FRP: 1.7     </div>`)[0];
+                popup_2b290d37b465b350ec791355e4d47b13.setContent(html_e9ffa6118123dd582396ceffc3aee97b);
+            
+        
+
+        marker_6b7eff64445d23ad4cd74e3f85593e62.bindPopup(popup_2b290d37b465b350ec791355e4d47b13)
+        ;
+
+        
+    
+    
+            var marker_3e63c36a62421ed8c41cfb053e940f57 = L.marker(
+                [-22.88992, -42.38727],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_d9a171499bd751cf93f1f322ac5480ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3e63c36a62421ed8c41cfb053e940f57.setIcon(icon_d9a171499bd751cf93f1f322ac5480ce);
+        
+    
+        var popup_bce934edd1fca53eb846bd20419e0fb2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab36cc60c54015a627dc7543aac5123f = $(`<div id="html_ab36cc60c54015a627dc7543aac5123f" style="width: 100.0%; height: 100.0%;">     Municipality: SAQUAREMA<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-17 16:52:00<br>     Days without rain: 3.0<br>     Precipitation: 0.0<br>     Fire Risk: -999.0<br>     Biome: Mata Atlântica<br>     FRP: 1.7     </div>`)[0];
+                popup_bce934edd1fca53eb846bd20419e0fb2.setContent(html_ab36cc60c54015a627dc7543aac5123f);
+            
+        
+
+        marker_3e63c36a62421ed8c41cfb053e940f57.bindPopup(popup_bce934edd1fca53eb846bd20419e0fb2)
+        ;
+
+        
+    
+    
+            var marker_bd6d3fc130ad4ea25a21566c2631597b = L.marker(
+                [-23.17997, -44.34124],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_4ca3e797eb0bb6e882468211512c8207 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bd6d3fc130ad4ea25a21566c2631597b.setIcon(icon_4ca3e797eb0bb6e882468211512c8207);
+        
+    
+        var popup_745b318bb6a00cd5ca919d83884f58ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_962e300dc64c9afbc4bc7b0a7780f6a2 = $(`<div id="html_962e300dc64c9afbc4bc7b0a7780f6a2" style="width: 100.0%; height: 100.0%;">     Municipality: ANGRA DOS REIS<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-17 16:52:00<br>     Days without rain: -999.0<br>     Precipitation: 0.1<br>     Fire Risk: 0.15<br>     Biome: Mata Atlântica<br>     FRP: 4.8     </div>`)[0];
+                popup_745b318bb6a00cd5ca919d83884f58ea.setContent(html_962e300dc64c9afbc4bc7b0a7780f6a2);
+            
+        
+
+        marker_bd6d3fc130ad4ea25a21566c2631597b.bindPopup(popup_745b318bb6a00cd5ca919d83884f58ea)
+        ;
+
+        
+    
+    
+            var marker_d5281daab49f051c2930988f5b8c9f8f = L.marker(
+                [-21.65318, -41.63166],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_daf8965eac4777b578570e24248081e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d5281daab49f051c2930988f5b8c9f8f.setIcon(icon_daf8965eac4777b578570e24248081e3);
+        
+    
+        var popup_15969abdc4345419eb68d8aea679ade1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbff718fc45480c47ccc8fbc366207ea = $(`<div id="html_cbff718fc45480c47ccc8fbc366207ea" style="width: 100.0%; height: 100.0%;">     Municipality: SÃO FIDÉLIS<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-17 16:52:00<br>     Days without rain: 3.0<br>     Precipitation: 0.0<br>     Fire Risk: 0.05<br>     Biome: Mata Atlântica<br>     FRP: 7.9     </div>`)[0];
+                popup_15969abdc4345419eb68d8aea679ade1.setContent(html_cbff718fc45480c47ccc8fbc366207ea);
+            
+        
+
+        marker_d5281daab49f051c2930988f5b8c9f8f.bindPopup(popup_15969abdc4345419eb68d8aea679ade1)
+        ;
+
+        
+    
+    
+            var marker_bc903c909b2122d8f65f2f8607afe4e1 = L.marker(
+                [-22.34071, -41.78381],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_2bf7108fd6cfa593a6f3fa5fedad97cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bc903c909b2122d8f65f2f8607afe4e1.setIcon(icon_2bf7108fd6cfa593a6f3fa5fedad97cc);
+        
+    
+        var popup_1ad36bfe9aa10a744945ff00bc346501 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e47d2071ae1b701fe791b7884f665b9 = $(`<div id="html_3e47d2071ae1b701fe791b7884f665b9" style="width: 100.0%; height: 100.0%;">     Municipality: MACAÉ<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-18 4:04:00<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 0.5     </div>`)[0];
+                popup_1ad36bfe9aa10a744945ff00bc346501.setContent(html_3e47d2071ae1b701fe791b7884f665b9);
+            
+        
+
+        marker_bc903c909b2122d8f65f2f8607afe4e1.bindPopup(popup_1ad36bfe9aa10a744945ff00bc346501)
+        ;
+
+        
+    
+    
+            var marker_9d932408dbf75a4c5311f8e847c7c75d = L.marker(
+                [-22.67467, -42.85832],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_e73879882129886efeee671ad88efa32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9d932408dbf75a4c5311f8e847c7c75d.setIcon(icon_e73879882129886efeee671ad88efa32);
+        
+    
+        var popup_08b7ba23daacb8e30581a7dbc3b9302c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36692780d3dfe9bc286c8d6350578170 = $(`<div id="html_36692780d3dfe9bc286c8d6350578170" style="width: 100.0%; height: 100.0%;">     Municipality: ITABORAÍ<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-18 4:04:00<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 0.5     </div>`)[0];
+                popup_08b7ba23daacb8e30581a7dbc3b9302c.setContent(html_36692780d3dfe9bc286c8d6350578170);
+            
+        
+
+        marker_9d932408dbf75a4c5311f8e847c7c75d.bindPopup(popup_08b7ba23daacb8e30581a7dbc3b9302c)
+        ;
+
+        
+    
+    
+            var marker_2e60763d202e6d547b8fbb99a6727c5b = L.marker(
+                [-21.27038, -41.14021],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_f5d25b8dacc6de191e5e87ec111e7881 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2e60763d202e6d547b8fbb99a6727c5b.setIcon(icon_f5d25b8dacc6de191e5e87ec111e7881);
+        
+    
+        var popup_7e6411fd4f80073a48b902519b014c72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a57228e6fa60914ab82823635232be6 = $(`<div id="html_5a57228e6fa60914ab82823635232be6" style="width: 100.0%; height: 100.0%;">     Municipality: SÃO FRANCISCO DE ITABAPOANA<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-18 15:45:00<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 2.3     </div>`)[0];
+                popup_7e6411fd4f80073a48b902519b014c72.setContent(html_5a57228e6fa60914ab82823635232be6);
+            
+        
+
+        marker_2e60763d202e6d547b8fbb99a6727c5b.bindPopup(popup_7e6411fd4f80073a48b902519b014c72)
+        ;
+
+        
+    
+    
+            var marker_993e6cef45855759de9d06296cf64bb6 = L.marker(
+                [-22.50877, -44.19797],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_09c85a03daff36710063d2a124476786 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_993e6cef45855759de9d06296cf64bb6.setIcon(icon_09c85a03daff36710063d2a124476786);
+        
+    
+        var popup_eb24bce8ceb24d427ccd740107771936 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47be66b885d65cf5ad7e153f64dc5a46 = $(`<div id="html_47be66b885d65cf5ad7e153f64dc5a46" style="width: 100.0%; height: 100.0%;">     Municipality: BARRA MANSA<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-18 16:34:00<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 4.5     </div>`)[0];
+                popup_eb24bce8ceb24d427ccd740107771936.setContent(html_47be66b885d65cf5ad7e153f64dc5a46);
+            
+        
+
+        marker_993e6cef45855759de9d06296cf64bb6.bindPopup(popup_eb24bce8ceb24d427ccd740107771936)
+        ;
+
+        
+    
+    
+            var marker_76cd4ef776c57d7be67f35028cb3217c = L.marker(
+                [-22.2952, -41.81934],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_abb2906b83bd6c3a9702836f91af214f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_76cd4ef776c57d7be67f35028cb3217c.setIcon(icon_abb2906b83bd6c3a9702836f91af214f);
+        
+    
+        var popup_9c06ad953a2d2816e01adb89e304a643 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c5bb2233701ba0ff6b2ddf03a8fb9a3 = $(`<div id="html_6c5bb2233701ba0ff6b2ddf03a8fb9a3" style="width: 100.0%; height: 100.0%;">     Municipality: MACAÉ<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-18 16:34:00<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 3.7     </div>`)[0];
+                popup_9c06ad953a2d2816e01adb89e304a643.setContent(html_6c5bb2233701ba0ff6b2ddf03a8fb9a3);
+            
+        
+
+        marker_76cd4ef776c57d7be67f35028cb3217c.bindPopup(popup_9c06ad953a2d2816e01adb89e304a643)
+        ;
+
+        
+    
+    
+            var marker_1f20d91f3c2ab4ca22d1ecad887612a2 = L.marker(
+                [-22.75995, -42.30335],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_34fc325a2dccadae58a2c632651a15db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1f20d91f3c2ab4ca22d1ecad887612a2.setIcon(icon_34fc325a2dccadae58a2c632651a15db);
+        
+    
+        var popup_f781e400d0d2d6e867c7b73380bd56f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_525e51adf8facf1c6bafd657dc8bf7bb = $(`<div id="html_525e51adf8facf1c6bafd657dc8bf7bb" style="width: 100.0%; height: 100.0%;">     Municipality: ARARUAMA<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-18 16:34:00<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 9.5     </div>`)[0];
+                popup_f781e400d0d2d6e867c7b73380bd56f3.setContent(html_525e51adf8facf1c6bafd657dc8bf7bb);
+            
+        
+
+        marker_1f20d91f3c2ab4ca22d1ecad887612a2.bindPopup(popup_f781e400d0d2d6e867c7b73380bd56f3)
+        ;
+
+        
+    
+    
+            var marker_c35f3c51c4aec07f805b50794e5b201b = L.marker(
+                [-22.74145, -42.39362],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_8d419e92ba3d4f7f28c1104c894d41b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c35f3c51c4aec07f805b50794e5b201b.setIcon(icon_8d419e92ba3d4f7f28c1104c894d41b6);
+        
+    
+        var popup_20c61078de66e29efdb1527dbf32e01e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2553f201bdfb250e801e157dc9a9b20c = $(`<div id="html_2553f201bdfb250e801e157dc9a9b20c" style="width: 100.0%; height: 100.0%;">     Municipality: ARARUAMA<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-18 16:34:00<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 2.2     </div>`)[0];
+                popup_20c61078de66e29efdb1527dbf32e01e.setContent(html_2553f201bdfb250e801e157dc9a9b20c);
+            
+        
+
+        marker_c35f3c51c4aec07f805b50794e5b201b.bindPopup(popup_20c61078de66e29efdb1527dbf32e01e)
+        ;
+
+        
+    
+    
+            var marker_cd19bf3c8812c4bfc859ced6fe96f35c = L.marker(
+                [-22.73365, -43.57089],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_eefabb6836c099c01bd53951e3460adc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cd19bf3c8812c4bfc859ced6fe96f35c.setIcon(icon_eefabb6836c099c01bd53951e3460adc);
+        
+    
+        var popup_f5cc0442c1c19a09055faae82d9a13b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3690bbc58dc89c2f336f416fd7066d8d = $(`<div id="html_3690bbc58dc89c2f336f416fd7066d8d" style="width: 100.0%; height: 100.0%;">     Municipality: QUEIMADOS<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-18 16:34:00<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 2.2     </div>`)[0];
+                popup_f5cc0442c1c19a09055faae82d9a13b0.setContent(html_3690bbc58dc89c2f336f416fd7066d8d);
+            
+        
+
+        marker_cd19bf3c8812c4bfc859ced6fe96f35c.bindPopup(popup_f5cc0442c1c19a09055faae82d9a13b0)
+        ;
+
+        
+    
+    
+            var marker_8732708fafffda13c57e109537c117fb = L.marker(
+                [-20.91506, -41.83252],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_aeb10b181e892059398b364fd4e11eaa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8732708fafffda13c57e109537c117fb.setIcon(icon_aeb10b181e892059398b364fd4e11eaa);
+        
+    
+        var popup_4de93b1737b438f77dbee1c9a1251e2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f75b688539ab8e04ddf50bf293e65cb5 = $(`<div id="html_f75b688539ab8e04ddf50bf293e65cb5" style="width: 100.0%; height: 100.0%;">     Municipality: VARRE-SAI<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-18 16:34:00<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 9.6     </div>`)[0];
+                popup_4de93b1737b438f77dbee1c9a1251e2a.setContent(html_f75b688539ab8e04ddf50bf293e65cb5);
+            
+        
+
+        marker_8732708fafffda13c57e109537c117fb.bindPopup(popup_4de93b1737b438f77dbee1c9a1251e2a)
+        ;
+
+        
+    
+    
+            var marker_a1cf8d8246ebbe727d153333e4dc3380 = L.marker(
+                [-21.2721, -41.14006],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_5301ca12be608cce09824ed37dd1165a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a1cf8d8246ebbe727d153333e4dc3380.setIcon(icon_5301ca12be608cce09824ed37dd1165a);
+        
+    
+        var popup_18925b2357a7644cb5a2752f237456b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17094797bbbd1a68ceb0c421ea2e2955 = $(`<div id="html_17094797bbbd1a68ceb0c421ea2e2955" style="width: 100.0%; height: 100.0%;">     Municipality: SÃO FRANCISCO DE ITABAPOANA<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-18 16:34:00<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 2.1     </div>`)[0];
+                popup_18925b2357a7644cb5a2752f237456b9.setContent(html_17094797bbbd1a68ceb0c421ea2e2955);
+            
+        
+
+        marker_a1cf8d8246ebbe727d153333e4dc3380.bindPopup(popup_18925b2357a7644cb5a2752f237456b9)
+        ;
+
+        
+    
+    
+            var marker_46d99418b2ed41c1267fd5c722a11946 = L.marker(
+                [-22.82954, -43.24532],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_e5cab7f8031043eee1be5adcd4eacb1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_46d99418b2ed41c1267fd5c722a11946.setIcon(icon_e5cab7f8031043eee1be5adcd4eacb1b);
+        
+    
+        var popup_ca363e5ae1aae595e6b24fd9da1332e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6fe4af05727af1225c7a6f212697271f = $(`<div id="html_6fe4af05727af1225c7a6f212697271f" style="width: 100.0%; height: 100.0%;">     Municipality: RIO DE JANEIRO<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-18 17:26:00<br>     Days without rain: nan<br>     Precipitation: nan<br>     Fire Risk: nan<br>     Biome: Mata Atlântica<br>     FRP: 6.6     </div>`)[0];
+                popup_ca363e5ae1aae595e6b24fd9da1332e7.setContent(html_6fe4af05727af1225c7a6f212697271f);
+            
+        
+
+        marker_46d99418b2ed41c1267fd5c722a11946.bindPopup(popup_ca363e5ae1aae595e6b24fd9da1332e7)
+        ;
+
+        
+    
+    
+            var marker_1f99f4d2c75ae1cc4d15c7686b758ce8 = L.marker(
+                [-22.67445, -42.85806],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_78aa03b588d90d5cb549ad7ef6cf2a89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1f99f4d2c75ae1cc4d15c7686b758ce8.setIcon(icon_78aa03b588d90d5cb549ad7ef6cf2a89);
+        
+    
+        var popup_1c411a37dad442cf2bd96f060bdce6ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ded97be3badbbc4338d0cb970165fae5 = $(`<div id="html_ded97be3badbbc4338d0cb970165fae5" style="width: 100.0%; height: 100.0%;">     Municipality: ITABORAÍ<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-19 3:46:00<br>     Days without rain: 2.0<br>     Precipitation: 0.0<br>     Fire Risk: -999.0<br>     Biome: Mata Atlântica<br>     FRP: 1.2     </div>`)[0];
+                popup_1c411a37dad442cf2bd96f060bdce6ee.setContent(html_ded97be3badbbc4338d0cb970165fae5);
+            
+        
+
+        marker_1f99f4d2c75ae1cc4d15c7686b758ce8.bindPopup(popup_1c411a37dad442cf2bd96f060bdce6ee)
+        ;
+
+        
+    
+    
+            var marker_1dfb3fe6617e8d1ed534c75766ab1d0c = L.marker(
+                [-22.85538, -42.97967],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_02f722eec2fa374b16f02db555bff674 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1dfb3fe6617e8d1ed534c75766ab1d0c.setIcon(icon_02f722eec2fa374b16f02db555bff674);
+        
+    
+        var popup_76f191ad34ba833fc237b4c70a7f341a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90e9a2cc5be74b6c9980890482ed8bbd = $(`<div id="html_90e9a2cc5be74b6c9980890482ed8bbd" style="width: 100.0%; height: 100.0%;">     Municipality: SÃO GONÇALO<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-19 3:46:00<br>     Days without rain: -999.0<br>     Precipitation: 0.0<br>     Fire Risk: 0.65<br>     Biome: Mata Atlântica<br>     FRP: 0.6     </div>`)[0];
+                popup_76f191ad34ba833fc237b4c70a7f341a.setContent(html_90e9a2cc5be74b6c9980890482ed8bbd);
+            
+        
+
+        marker_1dfb3fe6617e8d1ed534c75766ab1d0c.bindPopup(popup_76f191ad34ba833fc237b4c70a7f341a)
+        ;
+
+        
+    
+    
+            var marker_82e6522aaaf10be67e7c93e93f74f0c7 = L.marker(
+                [-22.93629, -42.27348],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_ed5b1feb7d763b8568a6a0913eec9d58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_82e6522aaaf10be67e7c93e93f74f0c7.setIcon(icon_ed5b1feb7d763b8568a6a0913eec9d58);
+        
+    
+        var popup_08d6a115855f53199b17da628819cbfa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a289d71bb16dd999669b2f270c66f50e = $(`<div id="html_a289d71bb16dd999669b2f270c66f50e" style="width: 100.0%; height: 100.0%;">     Municipality: ARRAIAL DO CABO<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-19 17:06:00<br>     Days without rain: 5.0<br>     Precipitation: 0.0<br>     Fire Risk: 0.67<br>     Biome: Mata Atlântica<br>     FRP: 10.9     </div>`)[0];
+                popup_08d6a115855f53199b17da628819cbfa.setContent(html_a289d71bb16dd999669b2f270c66f50e);
+            
+        
+
+        marker_82e6522aaaf10be67e7c93e93f74f0c7.bindPopup(popup_08d6a115855f53199b17da628819cbfa)
+        ;
+
+        
+    
+    
+            var marker_e7750320c8ea321d26ae61693cc2dd42 = L.marker(
+                [-22.39144, -43.63573],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_2c7c2434c741866a596583233b5bf7cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e7750320c8ea321d26ae61693cc2dd42.setIcon(icon_2c7c2434c741866a596583233b5bf7cc);
+        
+    
+        var popup_35bf57e626c20e31498d532dea4cf33d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b301b3b614fbd86097d013667d03c7f = $(`<div id="html_1b301b3b614fbd86097d013667d03c7f" style="width: 100.0%; height: 100.0%;">     Municipality: VASSOURAS<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-19 17:06:00<br>     Days without rain: 3.0<br>     Precipitation: 2.24<br>     Fire Risk: 0.03<br>     Biome: Mata Atlântica<br>     FRP: 3.4     </div>`)[0];
+                popup_35bf57e626c20e31498d532dea4cf33d.setContent(html_1b301b3b614fbd86097d013667d03c7f);
+            
+        
+
+        marker_e7750320c8ea321d26ae61693cc2dd42.bindPopup(popup_35bf57e626c20e31498d532dea4cf33d)
+        ;
+
+        
+    
+    
+            var marker_3f4224950f33aca1c2a0fa25809e386e = L.marker(
+                [-22.39057, -43.63867],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_551528574ace935e5094e0a8675c0ea0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3f4224950f33aca1c2a0fa25809e386e.setIcon(icon_551528574ace935e5094e0a8675c0ea0);
+        
+    
+        var popup_f5cebd556378319cb900eaaa5cb4523d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_189d7a13521f8a44a07d5fe574e0ddd1 = $(`<div id="html_189d7a13521f8a44a07d5fe574e0ddd1" style="width: 100.0%; height: 100.0%;">     Municipality: VASSOURAS<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-19 17:06:00<br>     Days without rain: 3.0<br>     Precipitation: 2.24<br>     Fire Risk: 0.03<br>     Biome: Mata Atlântica<br>     FRP: 3.6     </div>`)[0];
+                popup_f5cebd556378319cb900eaaa5cb4523d.setContent(html_189d7a13521f8a44a07d5fe574e0ddd1);
+            
+        
+
+        marker_3f4224950f33aca1c2a0fa25809e386e.bindPopup(popup_f5cebd556378319cb900eaaa5cb4523d)
+        ;
+
+        
+    
+    
+            var marker_2b460e042115299d7da36d00c58297b0 = L.marker(
+                [-21.94772, -41.0765],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_ae91d7d0bfaea817298ee049d4a4a0d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2b460e042115299d7da36d00c58297b0.setIcon(icon_ae91d7d0bfaea817298ee049d4a4a0d7);
+        
+    
+        var popup_f59e83c6ed00a8ef3a068803acf236c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a82e8e1c35233e072cdc586c5a9de457 = $(`<div id="html_a82e8e1c35233e072cdc586c5a9de457" style="width: 100.0%; height: 100.0%;">     Municipality: CAMPOS DOS GOYTACAZES<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-19 17:06:00<br>     Days without rain: 7.0<br>     Precipitation: 0.0<br>     Fire Risk: 0.81<br>     Biome: Mata Atlântica<br>     FRP: 2.6     </div>`)[0];
+                popup_f59e83c6ed00a8ef3a068803acf236c1.setContent(html_a82e8e1c35233e072cdc586c5a9de457);
+            
+        
+
+        marker_2b460e042115299d7da36d00c58297b0.bindPopup(popup_f59e83c6ed00a8ef3a068803acf236c1)
+        ;
+
+        
+    
+    
+            var marker_1921310d09321b6a6e4fb5dc4ba44857 = L.marker(
+                [-21.28683, -41.35442],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_0acf6366e8b43b2767eed29f7f02ffeb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1921310d09321b6a6e4fb5dc4ba44857.setIcon(icon_0acf6366e8b43b2767eed29f7f02ffeb);
+        
+    
+        var popup_28663f470e4a54f5fdef6118a53392b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0f8f9b2ecfa748cd5dda3538822ec8e = $(`<div id="html_c0f8f9b2ecfa748cd5dda3538822ec8e" style="width: 100.0%; height: 100.0%;">     Municipality: CAMPOS DOS GOYTACAZES<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-19 17:06:00<br>     Days without rain: 6.0<br>     Precipitation: 0.1<br>     Fire Risk: 0.08<br>     Biome: Mata Atlântica<br>     FRP: 1.8     </div>`)[0];
+                popup_28663f470e4a54f5fdef6118a53392b6.setContent(html_c0f8f9b2ecfa748cd5dda3538822ec8e);
+            
+        
+
+        marker_1921310d09321b6a6e4fb5dc4ba44857.bindPopup(popup_28663f470e4a54f5fdef6118a53392b6)
+        ;
+
+        
+    
+    
+            var marker_420d9fe38e72cf98dcbc4092b3923fc2 = L.marker(
+                [-22.857948, -43.761421],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_6e0d121f6f15b0a4bee0be489dc2f780 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_420d9fe38e72cf98dcbc4092b3923fc2.setIcon(icon_6e0d121f6f15b0a4bee0be489dc2f780);
+        
+    
+        var popup_ed91eef0eb1bb340bcac771293b5e037 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_140cd57a70d511eeeed9f40530a9e828 = $(`<div id="html_140cd57a70d511eeeed9f40530a9e828" style="width: 100.0%; height: 100.0%;">     Municipality: ITAGUAÍ<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-20 1:22:01<br>     Days without rain: 5.0<br>     Precipitation: 13.36<br>     Fire Risk: -999.0<br>     Biome: Mata Atlântica<br>     FRP: nan     </div>`)[0];
+                popup_ed91eef0eb1bb340bcac771293b5e037.setContent(html_140cd57a70d511eeeed9f40530a9e828);
+            
+        
+
+        marker_420d9fe38e72cf98dcbc4092b3923fc2.bindPopup(popup_ed91eef0eb1bb340bcac771293b5e037)
+        ;
+
+        
+    
+    
+            var marker_c02a02238380721768f37a24e5000d8c = L.marker(
+                [-22.78478, -43.75549],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_2049a31c49ebf40d9066ed7c477ba382 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c02a02238380721768f37a24e5000d8c.setIcon(icon_2049a31c49ebf40d9066ed7c477ba382);
+        
+    
+        var popup_0f8aa89833ad524630cd6bc9c5bd462c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a8d3d7174502c2ac631d4affcb98c30 = $(`<div id="html_0a8d3d7174502c2ac631d4affcb98c30" style="width: 100.0%; height: 100.0%;">     Municipality: SEROPÉDICA<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-20 4:21:00<br>     Days without rain: 4.0<br>     Precipitation: 10.45<br>     Fire Risk: -999.0<br>     Biome: Mata Atlântica<br>     FRP: 1.1     </div>`)[0];
+                popup_0f8aa89833ad524630cd6bc9c5bd462c.setContent(html_0a8d3d7174502c2ac631d4affcb98c30);
+            
+        
+
+        marker_c02a02238380721768f37a24e5000d8c.bindPopup(popup_0f8aa89833ad524630cd6bc9c5bd462c)
+        ;
+
+        
+    
+    
+            var marker_8bd06a7bab61feb21429a9c5e5c18b53 = L.marker(
+                [-22.67467, -42.85813],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_e0eebbd95c7d504a2cc39c75d016c6dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8bd06a7bab61feb21429a9c5e5c18b53.setIcon(icon_e0eebbd95c7d504a2cc39c75d016c6dc);
+        
+    
+        var popup_76dcc5d5b2040f0ede3d299a7c702c58 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e08af16f130bb37111150c798885a13 = $(`<div id="html_4e08af16f130bb37111150c798885a13" style="width: 100.0%; height: 100.0%;">     Municipality: ITABORAÍ<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-20 4:21:00<br>     Days without rain: 2.0<br>     Precipitation: 7.77<br>     Fire Risk: -999.0<br>     Biome: Mata Atlântica<br>     FRP: 1.0     </div>`)[0];
+                popup_76dcc5d5b2040f0ede3d299a7c702c58.setContent(html_4e08af16f130bb37111150c798885a13);
+            
+        
+
+        marker_8bd06a7bab61feb21429a9c5e5c18b53.bindPopup(popup_76dcc5d5b2040f0ede3d299a7c702c58)
+        ;
+
+        
+    
+    
+            var marker_2f84ca7b66d6862710d7d7223a11f82c = L.marker(
+                [-22.67628, -42.86036],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_ddf11c5fef12bec60706528e26333e06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2f84ca7b66d6862710d7d7223a11f82c.setIcon(icon_ddf11c5fef12bec60706528e26333e06);
+        
+    
+        var popup_5c8d9fd0c7e44c5cc13ae166606c7fbb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_327befc04394e20a5bf7578ef2d3e084 = $(`<div id="html_327befc04394e20a5bf7578ef2d3e084" style="width: 100.0%; height: 100.0%;">     Municipality: ITABORAÍ<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-22 3:42:00<br>     Days without rain: 0.0<br>     Precipitation: 0.0<br>     Fire Risk: -999.0<br>     Biome: Mata Atlântica<br>     FRP: 0.4     </div>`)[0];
+                popup_5c8d9fd0c7e44c5cc13ae166606c7fbb.setContent(html_327befc04394e20a5bf7578ef2d3e084);
+            
+        
+
+        marker_2f84ca7b66d6862710d7d7223a11f82c.bindPopup(popup_5c8d9fd0c7e44c5cc13ae166606c7fbb)
+        ;
+
+        
+    
+    
+            var marker_88b5ab928402ff67484ad1a77f5f9f64 = L.marker(
+                [-22.67372, -42.85552],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_2e831246024ea599e319a7a9d7aef588 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_88b5ab928402ff67484ad1a77f5f9f64.setIcon(icon_2e831246024ea599e319a7a9d7aef588);
+        
+    
+        var popup_310677e6d06dd543cb41049615272271 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea2c6a5f71a0eb83403675b4ca1882c2 = $(`<div id="html_ea2c6a5f71a0eb83403675b4ca1882c2" style="width: 100.0%; height: 100.0%;">     Municipality: ITABORAÍ<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-22 4:29:00<br>     Days without rain: 0.0<br>     Precipitation: 0.0<br>     Fire Risk: -999.0<br>     Biome: Mata Atlântica<br>     FRP: 0.8     </div>`)[0];
+                popup_310677e6d06dd543cb41049615272271.setContent(html_ea2c6a5f71a0eb83403675b4ca1882c2);
+            
+        
+
+        marker_88b5ab928402ff67484ad1a77f5f9f64.bindPopup(popup_310677e6d06dd543cb41049615272271)
+        ;
+
+        
+    
+    
+            var marker_9026f7469bbb5441e407c8cbd533499c = L.marker(
+                [-22.62465, -43.22072],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_251c20e4b0ad0e7503000bd8f82e7b37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9026f7469bbb5441e407c8cbd533499c.setIcon(icon_251c20e4b0ad0e7503000bd8f82e7b37);
+        
+    
+        var popup_75d7336c15ebd76c6d7f11a976258de3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19a1e5e842d9de390787b8e134411444 = $(`<div id="html_19a1e5e842d9de390787b8e134411444" style="width: 100.0%; height: 100.0%;">     Municipality: DUQUE DE CAXIAS<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-22 16:09:00<br>     Days without rain: -999.0<br>     Precipitation: 0.0<br>     Fire Risk: -999.0<br>     Biome: Mata Atlântica<br>     FRP: 4.2     </div>`)[0];
+                popup_75d7336c15ebd76c6d7f11a976258de3.setContent(html_19a1e5e842d9de390787b8e134411444);
+            
+        
+
+        marker_9026f7469bbb5441e407c8cbd533499c.bindPopup(popup_75d7336c15ebd76c6d7f11a976258de3)
+        ;
+
+        
+    
+    
+            var marker_58032825ca12cf8a1ed5e991a750d45b = L.marker(
+                [-22.62513, -43.22495],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_b36fc3409c6335594b652327dac34ddb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_58032825ca12cf8a1ed5e991a750d45b.setIcon(icon_b36fc3409c6335594b652327dac34ddb);
+        
+    
+        var popup_5ceaa0ecbe6a60b0c0d4db29d105d019 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca628dae4e0767f8be5a1b20fa8998ad = $(`<div id="html_ca628dae4e0767f8be5a1b20fa8998ad" style="width: 100.0%; height: 100.0%;">     Municipality: DUQUE DE CAXIAS<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-22 16:09:00<br>     Days without rain: -999.0<br>     Precipitation: 0.0<br>     Fire Risk: -999.0<br>     Biome: Mata Atlântica<br>     FRP: 2.8     </div>`)[0];
+                popup_5ceaa0ecbe6a60b0c0d4db29d105d019.setContent(html_ca628dae4e0767f8be5a1b20fa8998ad);
+            
+        
+
+        marker_58032825ca12cf8a1ed5e991a750d45b.bindPopup(popup_5ceaa0ecbe6a60b0c0d4db29d105d019)
+        ;
+
+        
+    
+    
+            var marker_320906153aff7b5e33d98b53d5273c35 = L.marker(
+                [-22.936863, -43.746487],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_f36915703ab0c26e0f09b9b041b79fdf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_320906153aff7b5e33d98b53d5273c35.setIcon(icon_f36915703ab0c26e0f09b9b041b79fdf);
+        
+    
+        var popup_6d3061c72f2d2dc487c711ec7c3435e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fd0872316059078e0b6d0e6e05a879e = $(`<div id="html_0fd0872316059078e0b6d0e6e05a879e" style="width: 100.0%; height: 100.0%;">     Municipality: RIO DE JANEIRO<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-22 23:41:03<br>     Days without rain: 0.0<br>     Precipitation: 0.0<br>     Fire Risk: 0.03<br>     Biome: Mata Atlântica<br>     FRP: nan     </div>`)[0];
+                popup_6d3061c72f2d2dc487c711ec7c3435e0.setContent(html_0fd0872316059078e0b6d0e6e05a879e);
+            
+        
+
+        marker_320906153aff7b5e33d98b53d5273c35.bindPopup(popup_6d3061c72f2d2dc487c711ec7c3435e0)
+        ;
+
+        
+    
+    
+            var marker_623cbcd5cbd0102b126819fce7280243 = L.marker(
+                [-22.85713, -42.98256],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_a0f2f88045cbfdc0a09db33139af036b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_623cbcd5cbd0102b126819fce7280243.setIcon(icon_a0f2f88045cbfdc0a09db33139af036b);
+        
+    
+        var popup_858e7aa73941c8603d4967317965a614 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1bc7e6262491584e346712bf6b5b308d = $(`<div id="html_1bc7e6262491584e346712bf6b5b308d" style="width: 100.0%; height: 100.0%;">     Municipality: SÃO GONÇALO<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-23 4:12:00<br>     Days without rain: -999.0<br>     Precipitation: 19.68<br>     Fire Risk: 0.0<br>     Biome: Mata Atlântica<br>     FRP: 0.8     </div>`)[0];
+                popup_858e7aa73941c8603d4967317965a614.setContent(html_1bc7e6262491584e346712bf6b5b308d);
+            
+        
+
+        marker_623cbcd5cbd0102b126819fce7280243.bindPopup(popup_858e7aa73941c8603d4967317965a614)
+        ;
+
+        
+    
+    
+            var marker_48976b74189817d22f0b43743c92aae3 = L.marker(
+                [-22.90269, -43.75387],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_b8cff86c9b800f3962156e571e1948ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_48976b74189817d22f0b43743c92aae3.setIcon(icon_b8cff86c9b800f3962156e571e1948ec);
+        
+    
+        var popup_99315f6e58b0b8aab2f3af6981fd388d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b71649a6e6310834f9992f9be957635 = $(`<div id="html_6b71649a6e6310834f9992f9be957635" style="width: 100.0%; height: 100.0%;">     Municipality: RIO DE JANEIRO<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-25 4:25:00<br>     Days without rain: 0.0<br>     Precipitation: 0.1<br>     Fire Risk: -999.0<br>     Biome: Mata Atlântica<br>     FRP: 2.6     </div>`)[0];
+                popup_99315f6e58b0b8aab2f3af6981fd388d.setContent(html_6b71649a6e6310834f9992f9be957635);
+            
+        
+
+        marker_48976b74189817d22f0b43743c92aae3.bindPopup(popup_99315f6e58b0b8aab2f3af6981fd388d)
+        ;
+
+        
+    
+    
+            var marker_9447ea0614b8af9a4823c42fd8ce026a = L.marker(
+                [-22.62401, -43.22326],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_b34a813ea1161c47ee8079b14a4126d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9447ea0614b8af9a4823c42fd8ce026a.setIcon(icon_b34a813ea1161c47ee8079b14a4126d9);
+        
+    
+        var popup_217c1617abf367deffb34c653846e59b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a72247ae8068b49137a9b46e59471b8 = $(`<div id="html_9a72247ae8068b49137a9b46e59471b8" style="width: 100.0%; height: 100.0%;">     Municipality: DUQUE DE CAXIAS<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-25 16:54:00<br>     Days without rain: -999.0<br>     Precipitation: 0.1<br>     Fire Risk: -999.0<br>     Biome: Mata Atlântica<br>     FRP: 3.7     </div>`)[0];
+                popup_217c1617abf367deffb34c653846e59b.setContent(html_9a72247ae8068b49137a9b46e59471b8);
+            
+        
+
+        marker_9447ea0614b8af9a4823c42fd8ce026a.bindPopup(popup_217c1617abf367deffb34c653846e59b)
+        ;
+
+        
+    
+    
+            var marker_663bbf437e60b15921d60954de6779b1 = L.marker(
+                [-22.844681, -43.777767],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_dfec1941942126001b3f5b97b1e4ac9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_663bbf437e60b15921d60954de6779b1.setIcon(icon_dfec1941942126001b3f5b97b1e4ac9d);
+        
+    
+        var popup_eca3370929d80aa0e4cfd7827ff6f7a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9b4f2c6acd7dca418cae0524e61b385 = $(`<div id="html_d9b4f2c6acd7dca418cae0524e61b385" style="width: 100.0%; height: 100.0%;">     Municipality: ITAGUAÍ<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-25 23:05:04<br>     Days without rain: 0.0<br>     Precipitation: 0.08<br>     Fire Risk: 0.01<br>     Biome: Mata Atlântica<br>     FRP: nan     </div>`)[0];
+                popup_eca3370929d80aa0e4cfd7827ff6f7a3.setContent(html_d9b4f2c6acd7dca418cae0524e61b385);
+            
+        
+
+        marker_663bbf437e60b15921d60954de6779b1.bindPopup(popup_eca3370929d80aa0e4cfd7827ff6f7a3)
+        ;
+
+        
+    
+    
+            var marker_14d0d012a06c9b7d1f80a2437bf5ee15 = L.marker(
+                [-22.89718, -43.75584],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_faa7cb98087c45477795edc99ce9467b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_14d0d012a06c9b7d1f80a2437bf5ee15.setIcon(icon_faa7cb98087c45477795edc99ce9467b);
+        
+    
+        var popup_acaf19a74ff01b8c4db699e1674be715 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c61e999c5a60e0d3f15e4e0573527db3 = $(`<div id="html_c61e999c5a60e0d3f15e4e0573527db3" style="width: 100.0%; height: 100.0%;">     Municipality: RIO DE JANEIRO<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-26 3:17:00<br>     Days without rain: 2.0<br>     Precipitation: 0.0<br>     Fire Risk: 0.01<br>     Biome: Mata Atlântica<br>     FRP: 1.8     </div>`)[0];
+                popup_acaf19a74ff01b8c4db699e1674be715.setContent(html_c61e999c5a60e0d3f15e4e0573527db3);
+            
+        
+
+        marker_14d0d012a06c9b7d1f80a2437bf5ee15.bindPopup(popup_acaf19a74ff01b8c4db699e1674be715)
+        ;
+
+        
+    
+    
+            var marker_337e5ccb87a84def90d532da0d20eaaf = L.marker(
+                [-22.85481, -42.98188],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_8696bc4d05cfa702a38db520eb733d20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_337e5ccb87a84def90d532da0d20eaaf.setIcon(icon_8696bc4d05cfa702a38db520eb733d20);
+        
+    
+        var popup_02fa1765aa51d2a7208672a0544ba80e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_864a49f4635845f7cfb9543d07f1cde5 = $(`<div id="html_864a49f4635845f7cfb9543d07f1cde5" style="width: 100.0%; height: 100.0%;">     Municipality: SÃO GONÇALO<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-26 4:06:00<br>     Days without rain: -999.0<br>     Precipitation: 0.0<br>     Fire Risk: 0.12<br>     Biome: Mata Atlântica<br>     FRP: 0.7     </div>`)[0];
+                popup_02fa1765aa51d2a7208672a0544ba80e.setContent(html_864a49f4635845f7cfb9543d07f1cde5);
+            
+        
+
+        marker_337e5ccb87a84def90d532da0d20eaaf.bindPopup(popup_02fa1765aa51d2a7208672a0544ba80e)
+        ;
+
+        
+    
+    
+            var marker_6ab73d8306724aff03232ab858dae2f2 = L.marker(
+                [-22.78731, -43.75593],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_447caa71b404467376a7256c6678a499 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6ab73d8306724aff03232ab858dae2f2.setIcon(icon_447caa71b404467376a7256c6678a499);
+        
+    
+        var popup_4918284c2d03c0354ed7b7487121b465 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d87efe61dad4a8bb3ef58b6213c65013 = $(`<div id="html_d87efe61dad4a8bb3ef58b6213c65013" style="width: 100.0%; height: 100.0%;">     Municipality: SEROPÉDICA<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-26 4:55:00<br>     Days without rain: 2.0<br>     Precipitation: 0.0<br>     Fire Risk: -999.0<br>     Biome: Mata Atlântica<br>     FRP: 1.6     </div>`)[0];
+                popup_4918284c2d03c0354ed7b7487121b465.setContent(html_d87efe61dad4a8bb3ef58b6213c65013);
+            
+        
+
+        marker_6ab73d8306724aff03232ab858dae2f2.bindPopup(popup_4918284c2d03c0354ed7b7487121b465)
+        ;
+
+        
+    
+    
+            var marker_d308ccc8c002593307618cd5434f4af1 = L.marker(
+                [-22.62196, -43.22102],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_a51eb2b1c0e6acf49ddec2574a7a3d71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d308ccc8c002593307618cd5434f4af1.setIcon(icon_a51eb2b1c0e6acf49ddec2574a7a3d71);
+        
+    
+        var popup_c9780e24f28dc372684ee0e8f70febd2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0588e1f718d5bf5f1741f0ea15bc0a31 = $(`<div id="html_0588e1f718d5bf5f1741f0ea15bc0a31" style="width: 100.0%; height: 100.0%;">     Municipality: DUQUE DE CAXIAS<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-27 16:15:00<br>     Days without rain: -999.0<br>     Precipitation: 1.98<br>     Fire Risk: -999.0<br>     Biome: Mata Atlântica<br>     FRP: 6.1     </div>`)[0];
+                popup_c9780e24f28dc372684ee0e8f70febd2.setContent(html_0588e1f718d5bf5f1741f0ea15bc0a31);
+            
+        
+
+        marker_d308ccc8c002593307618cd5434f4af1.bindPopup(popup_c9780e24f28dc372684ee0e8f70febd2)
+        ;
+
+        
+    
+    
+            var marker_00f1190170f9ba0867d26fd166967186 = L.marker(
+                [-22.78197, -43.76182],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_3101da79d1299d1296ce8cdf99c86e46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_00f1190170f9ba0867d26fd166967186.setIcon(icon_3101da79d1299d1296ce8cdf99c86e46);
+        
+    
+        var popup_998b7b5ed427379f609e0e58e33f65b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_141a9747a0148a23dcec9582300ee1c1 = $(`<div id="html_141a9747a0148a23dcec9582300ee1c1" style="width: 100.0%; height: 100.0%;">     Municipality: SEROPÉDICA<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-28 3:29:00<br>     Days without rain: 3.0<br>     Precipitation: 30.63<br>     Fire Risk: -999.0<br>     Biome: Mata Atlântica<br>     FRP: 1.6     </div>`)[0];
+                popup_998b7b5ed427379f609e0e58e33f65b2.setContent(html_141a9747a0148a23dcec9582300ee1c1);
+            
+        
+
+        marker_00f1190170f9ba0867d26fd166967186.bindPopup(popup_998b7b5ed427379f609e0e58e33f65b2)
+        ;
+
+        
+    
+    
+            var marker_785576849240d8049d06adca5cf2a951 = L.marker(
+                [-22.82304, -42.35316],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_5b8a1a8e823a7ce2d768a8ca4d389b9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_785576849240d8049d06adca5cf2a951.setIcon(icon_5b8a1a8e823a7ce2d768a8ca4d389b9a);
+        
+    
+        var popup_0fa6d9739be3a99f958422ab1887ce6a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a364538bf1ceec09a65b22d78e7e062f = $(`<div id="html_a364538bf1ceec09a65b22d78e7e062f" style="width: 100.0%; height: 100.0%;">     Municipality: ARARUAMA<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-28 16:45:00<br>     Days without rain: 2.0<br>     Precipitation: 3.35<br>     Fire Risk: 0.24<br>     Biome: Mata Atlântica<br>     FRP: 3.6     </div>`)[0];
+                popup_0fa6d9739be3a99f958422ab1887ce6a.setContent(html_a364538bf1ceec09a65b22d78e7e062f);
+            
+        
+
+        marker_785576849240d8049d06adca5cf2a951.bindPopup(popup_0fa6d9739be3a99f958422ab1887ce6a)
+        ;
+
+        
+    
+    
+            var marker_3fb8e7b505385c34561f7727514a3a85 = L.marker(
+                [-22.87371, -43.64146],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_3d3eb65f062abe33bed73f84234c03bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3fb8e7b505385c34561f7727514a3a85.setIcon(icon_3d3eb65f062abe33bed73f84234c03bd);
+        
+    
+        var popup_ffd44f39714c62790f64b7ee8f61e52a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c94c994a86a69a2e898dc3f660e61531 = $(`<div id="html_c94c994a86a69a2e898dc3f660e61531" style="width: 100.0%; height: 100.0%;">     Municipality: RIO DE JANEIRO<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-30 16:07:00<br>     Days without rain: 3.0<br>     Precipitation: 42.61<br>     Fire Risk: -999.0<br>     Biome: Mata Atlântica<br>     FRP: 3.9     </div>`)[0];
+                popup_ffd44f39714c62790f64b7ee8f61e52a.setContent(html_c94c994a86a69a2e898dc3f660e61531);
+            
+        
+
+        marker_3fb8e7b505385c34561f7727514a3a85.bindPopup(popup_ffd44f39714c62790f64b7ee8f61e52a)
+        ;
+
+        
+    
+    
+            var marker_3737e68996c39eb843af6ffdd6e3dc5f = L.marker(
+                [-22.86764, -43.57307],
+                {}
+            ).addTo(map_34da13300d12993f7d58971939c9a3e0);
+        
+    
+            var icon_884f24c03d8ab4261c6182a00f23ac62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3737e68996c39eb843af6ffdd6e3dc5f.setIcon(icon_884f24c03d8ab4261c6182a00f23ac62);
+        
+    
+        var popup_02d7402a24ac94b38991021e9a2a7bbb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c13c0250dcb218aeb19e2913765cdd9 = $(`<div id="html_2c13c0250dcb218aeb19e2913765cdd9" style="width: 100.0%; height: 100.0%;">     Municipality: RIO DE JANEIRO<br>     State: RIO DE JANEIRO<br>     Date/Time: 2023-01-30 17:00:00<br>     Days without rain: 3.0<br>     Precipitation: 48.25<br>     Fire Risk: -999.0<br>     Biome: Mata Atlântica<br>     FRP: 3.6     </div>`)[0];
+                popup_02d7402a24ac94b38991021e9a2a7bbb.setContent(html_2c13c0250dcb218aeb19e2913765cdd9);
+            
+        
+
+        marker_3737e68996c39eb843af6ffdd6e3dc5f.bindPopup(popup_02d7402a24ac94b38991021e9a2a7bbb)
+        ;
+
+        
+    
+</script>
+</html>

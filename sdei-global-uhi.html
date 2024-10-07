@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_38f3df98e7fc2d411a4b6b02b8f71269 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_38f3df98e7fc2d411a4b6b02b8f71269" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_38f3df98e7fc2d411a4b6b02b8f71269 = L.map(
+                "map_38f3df98e7fc2d411a4b6b02b8f71269",
+                {
+                    center: [-23.0, -46.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5f6e5bed1e8b132568a489386e0b2975 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_5f6e5bed1e8b132568a489386e0b2975.addTo(map_38f3df98e7fc2d411a4b6b02b8f71269);
+        
+    
+            var marker_c239ba3a61cb636a3f876ef22e8a801d = L.marker(
+                [-22.75866384, -43.27704741],
+                {}
+            ).addTo(map_38f3df98e7fc2d411a4b6b02b8f71269);
+        
+    
+            var icon_3daf10f9875c1d28d7df3f61aab6961c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c239ba3a61cb636a3f876ef22e8a801d.setIcon(icon_3daf10f9875c1d28d7df3f61aab6961c);
+        
+    
+        var popup_d0ca1c973b4023d4acd1e7f6b266e895 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fe18bf795538b190f3810ae1320454d8 = $(`<div id="html_fe18bf795538b190f3810ae1320454d8" style="width: 100.0%; height: 100.0%;"><strong>NASA UHI Data</strong><br><strong>Location:</strong> Rio de Janeiro<br><strong>Average Daytime Temperature:</strong> 40.87 °C<br><strong>Buffer Average Daytime Temperature:</strong> 36.0 °C<br><strong>Estimated Population in 2000:</strong> 11209092<br><strong>Daytime Temperature Difference:</strong> 4.87 °C<br><br><a href='#' onclick='alert(\`Definitions of terms used:\`);'>Click for Definitions</a></div>`)[0];
+                popup_d0ca1c973b4023d4acd1e7f6b266e895.setContent(html_fe18bf795538b190f3810ae1320454d8);
+            
+        
+
+        marker_c239ba3a61cb636a3f876ef22e8a801d.bindPopup(popup_d0ca1c973b4023d4acd1e7f6b266e895)
+        ;
+
+        
+    
+    
+            var marker_f8fdcb42221bb63da8cfb8ae41eff1c1 = L.marker(
+                [-22.58361393, -46.52239409],
+                {}
+            ).addTo(map_38f3df98e7fc2d411a4b6b02b8f71269);
+        
+    
+            var icon_5bac1ad8fa1d285e00da88f4ea460e87 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f8fdcb42221bb63da8cfb8ae41eff1c1.setIcon(icon_5bac1ad8fa1d285e00da88f4ea460e87);
+        
+    
+        var popup_41510f32071e147456e865edeafaf1d2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6e08e1739a748434a868109d96917e9c = $(`<div id="html_6e08e1739a748434a868109d96917e9c" style="width: 100.0%; height: 100.0%;"><strong>NASA UHI Data</strong><br><strong>Location:</strong> Socorro<br><strong>Average Daytime Temperature:</strong> 39.35 °C<br><strong>Buffer Average Daytime Temperature:</strong> 37.19 °C<br><strong>Estimated Population in 2000:</strong> 20980<br><strong>Daytime Temperature Difference:</strong> 2.16 °C<br><br><a href='#' onclick='alert(\`Definitions of terms used:\`);'>Click for Definitions</a></div>`)[0];
+                popup_41510f32071e147456e865edeafaf1d2.setContent(html_6e08e1739a748434a868109d96917e9c);
+            
+        
+
+        marker_f8fdcb42221bb63da8cfb8ae41eff1c1.bindPopup(popup_41510f32071e147456e865edeafaf1d2)
+        ;
+
+        
+    
+    
+            var marker_ee5dcd982b001182365f61a1f7151a0c = L.marker(
+                [-22.60513252, -46.69667181],
+                {}
+            ).addTo(map_38f3df98e7fc2d411a4b6b02b8f71269);
+        
+    
+            var icon_27b3f2a31c879656e7db86a67a51b726 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ee5dcd982b001182365f61a1f7151a0c.setIcon(icon_27b3f2a31c879656e7db86a67a51b726);
+        
+    
+        var popup_6098e09e9bf1f967568e06354c764257 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d17355ffa42f0a25f409a50dc2987ef8 = $(`<div id="html_d17355ffa42f0a25f409a50dc2987ef8" style="width: 100.0%; height: 100.0%;"><strong>NASA UHI Data</strong><br><strong>Location:</strong> Serra Negra<br><strong>Average Daytime Temperature:</strong> 37.56 °C<br><strong>Buffer Average Daytime Temperature:</strong> 37.57 °C<br><strong>Estimated Population in 2000:</strong> 20612<br><strong>Daytime Temperature Difference:</strong> -0.01 °C<br><br><a href='#' onclick='alert(\`Definitions of terms used:\`);'>Click for Definitions</a></div>`)[0];
+                popup_6098e09e9bf1f967568e06354c764257.setContent(html_d17355ffa42f0a25f409a50dc2987ef8);
+            
+        
+
+        marker_ee5dcd982b001182365f61a1f7151a0c.bindPopup(popup_6098e09e9bf1f967568e06354c764257)
+        ;
+
+        
+    
+    
+            var marker_c767a60b7767ae4d400e6087b728e1a2 = L.marker(
+                [-22.68119471, -50.39530263],
+                {}
+            ).addTo(map_38f3df98e7fc2d411a4b6b02b8f71269);
+        
+    
+            var icon_d05293cb7386e58db393ebc1bdc68b14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c767a60b7767ae4d400e6087b728e1a2.setIcon(icon_d05293cb7386e58db393ebc1bdc68b14);
+        
+    
+        var popup_ad0851e8f7b8eba8d1765580d64eaf24 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f011eeed88b831b08a3caa2035968243 = $(`<div id="html_f011eeed88b831b08a3caa2035968243" style="width: 100.0%; height: 100.0%;"><strong>NASA UHI Data</strong><br><strong>Location:</strong> Assis<br><strong>Average Daytime Temperature:</strong> 41.09 °C<br><strong>Buffer Average Daytime Temperature:</strong> 40.76 °C<br><strong>Estimated Population in 2000:</strong> 107557<br><strong>Daytime Temperature Difference:</strong> 0.33 °C<br><br><a href='#' onclick='alert(\`Definitions of terms used:\`);'>Click for Definitions</a></div>`)[0];
+                popup_ad0851e8f7b8eba8d1765580d64eaf24.setContent(html_f011eeed88b831b08a3caa2035968243);
+            
+        
+
+        marker_c767a60b7767ae4d400e6087b728e1a2.bindPopup(popup_ad0851e8f7b8eba8d1765580d64eaf24)
+        ;
+
+        
+    
+    
+            var marker_359becb2b7dbbafe918fa19c5db1342f = L.marker(
+                [-22.72280912, -47.6331103],
+                {}
+            ).addTo(map_38f3df98e7fc2d411a4b6b02b8f71269);
+        
+    
+            var icon_a110f1d433747dc682918ee825cb75a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_359becb2b7dbbafe918fa19c5db1342f.setIcon(icon_a110f1d433747dc682918ee825cb75a5);
+        
+    
+        var popup_0fbaaf94d8db7b822bc2225d800c03e3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2e4c962efcd74fe783afe635a0ad9aa0 = $(`<div id="html_2e4c962efcd74fe783afe635a0ad9aa0" style="width: 100.0%; height: 100.0%;"><strong>NASA UHI Data</strong><br><strong>Location:</strong> Piracicaba<br><strong>Average Daytime Temperature:</strong> 43.14 °C<br><strong>Buffer Average Daytime Temperature:</strong> 41.37 °C<br><strong>Estimated Population in 2000:</strong> 264970<br><strong>Daytime Temperature Difference:</strong> 1.77 °C<br><br><a href='#' onclick='alert(\`Definitions of terms used:\`);'>Click for Definitions</a></div>`)[0];
+                popup_0fbaaf94d8db7b822bc2225d800c03e3.setContent(html_2e4c962efcd74fe783afe635a0ad9aa0);
+            
+        
+
+        marker_359becb2b7dbbafe918fa19c5db1342f.bindPopup(popup_0fbaaf94d8db7b822bc2225d800c03e3)
+        ;
+
+        
+    
+    
+            var marker_50c6822d02e34f954a27de7fb55e232a = L.marker(
+                [-22.72812806, -45.57595798],
+                {}
+            ).addTo(map_38f3df98e7fc2d411a4b6b02b8f71269);
+        
+    
+            var icon_e556cdad4ae38907d21905c2d5018d9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_50c6822d02e34f954a27de7fb55e232a.setIcon(icon_e556cdad4ae38907d21905c2d5018d9f);
+        
+    
+        var popup_3379ce32c596e4598138efb179dd4341 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b313b166abf797e40ea91689194f88bf = $(`<div id="html_b313b166abf797e40ea91689194f88bf" style="width: 100.0%; height: 100.0%;"><strong>NASA UHI Data</strong><br><strong>Location:</strong> Campos do Jord?o<br><strong>Average Daytime Temperature:</strong> 30.31 °C<br><strong>Buffer Average Daytime Temperature:</strong> 31.51 °C<br><strong>Estimated Population in 2000:</strong> 43809<br><strong>Daytime Temperature Difference:</strong> -1.2 °C<br><br><a href='#' onclick='alert(\`Definitions of terms used:\`);'>Click for Definitions</a></div>`)[0];
+                popup_3379ce32c596e4598138efb179dd4341.setContent(html_b313b166abf797e40ea91689194f88bf);
+            
+        
+
+        marker_50c6822d02e34f954a27de7fb55e232a.bindPopup(popup_3379ce32c596e4598138efb179dd4341)
+        ;
+
+        
+    
+    
+            var marker_98b7e161e5eb7d732d8484bf9267ce82 = L.marker(
+                [-22.73406855, -48.56864196],
+                {}
+            ).addTo(map_38f3df98e7fc2d411a4b6b02b8f71269);
+        
+    
+            var icon_349dd7b878a5557d3cdfa9ec8be0a411 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_98b7e161e5eb7d732d8484bf9267ce82.setIcon(icon_349dd7b878a5557d3cdfa9ec8be0a411);
+        
+    
+        var popup_8c8955c7838762cf885b9e438374bcd6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a713574eb8759aa5d87c23dcd02d13c3 = $(`<div id="html_a713574eb8759aa5d87c23dcd02d13c3" style="width: 100.0%; height: 100.0%;"><strong>NASA UHI Data</strong><br><strong>Location:</strong> S?o Manuel<br><strong>Average Daytime Temperature:</strong> 40.12 °C<br><strong>Buffer Average Daytime Temperature:</strong> 40.51 °C<br><strong>Estimated Population in 2000:</strong> 31512<br><strong>Daytime Temperature Difference:</strong> -0.39 °C<br><br><a href='#' onclick='alert(\`Definitions of terms used:\`);'>Click for Definitions</a></div>`)[0];
+                popup_8c8955c7838762cf885b9e438374bcd6.setContent(html_a713574eb8759aa5d87c23dcd02d13c3);
+            
+        
+
+        marker_98b7e161e5eb7d732d8484bf9267ce82.bindPopup(popup_8c8955c7838762cf885b9e438374bcd6)
+        ;
+
+        
+    
+    
+            var marker_31f0e2dc12af48b96f1cb6aef69cc5c6 = L.marker(
+                [-22.83968906, -47.59913337],
+                {}
+            ).addTo(map_38f3df98e7fc2d411a4b6b02b8f71269);
+        
+    
+            var icon_14d167b9bf40c6a88379af0dfc3e4378 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_31f0e2dc12af48b96f1cb6aef69cc5c6.setIcon(icon_14d167b9bf40c6a88379af0dfc3e4378);
+        
+    
+        var popup_4a9a9547678af05f12c9b9db0dee7603 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_46d2f580e2311d5c52752fa98520e397 = $(`<div id="html_46d2f580e2311d5c52752fa98520e397" style="width: 100.0%; height: 100.0%;"><strong>NASA UHI Data</strong><br><strong>Location:</strong> Rio das Pedras<br><strong>Average Daytime Temperature:</strong> 44.24 °C<br><strong>Buffer Average Daytime Temperature:</strong> 42.76 °C<br><strong>Estimated Population in 2000:</strong> 21954<br><strong>Daytime Temperature Difference:</strong> 1.48 °C<br><br><a href='#' onclick='alert(\`Definitions of terms used:\`);'>Click for Definitions</a></div>`)[0];
+                popup_4a9a9547678af05f12c9b9db0dee7603.setContent(html_46d2f580e2311d5c52752fa98520e397);
+            
+        
+
+        marker_31f0e2dc12af48b96f1cb6aef69cc5c6.bindPopup(popup_4a9a9547678af05f12c9b9db0dee7603)
+        ;
+
+        
+    
+    
+            var marker_2aa44381662fd3c7697a09e75d3bc399 = L.marker(
+                [-22.88699542, -48.44243543],
+                {}
+            ).addTo(map_38f3df98e7fc2d411a4b6b02b8f71269);
+        
+    
+            var icon_600a957ee57a4524b0b6dda7b33a16ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2aa44381662fd3c7697a09e75d3bc399.setIcon(icon_600a957ee57a4524b0b6dda7b33a16ec);
+        
+    
+        var popup_e6ac9fdfb3432358885b92031bcb4550 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d589dc9655c4a5c6027a80002960fcbb = $(`<div id="html_d589dc9655c4a5c6027a80002960fcbb" style="width: 100.0%; height: 100.0%;"><strong>NASA UHI Data</strong><br><strong>Location:</strong> Botucatu<br><strong>Average Daytime Temperature:</strong> 43.07 °C<br><strong>Buffer Average Daytime Temperature:</strong> 39.43 °C<br><strong>Estimated Population in 2000:</strong> 98133<br><strong>Daytime Temperature Difference:</strong> 3.63 °C<br><br><a href='#' onclick='alert(\`Definitions of terms used:\`);'>Click for Definitions</a></div>`)[0];
+                popup_e6ac9fdfb3432358885b92031bcb4550.setContent(html_d589dc9655c4a5c6027a80002960fcbb);
+            
+        
+
+        marker_2aa44381662fd3c7697a09e75d3bc399.bindPopup(popup_e6ac9fdfb3432358885b92031bcb4550)
+        ;
+
+        
+    
+    
+            var marker_1db0e06a18e4b57d9952836a7e69bfeb = L.marker(
+                [-22.89496812, -49.61432249],
+                {}
+            ).addTo(map_38f3df98e7fc2d411a4b6b02b8f71269);
+        
+    
+            var icon_e387241b70356dcf1f377293dfa39dd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1db0e06a18e4b57d9952836a7e69bfeb.setIcon(icon_e387241b70356dcf1f377293dfa39dd7);
+        
+    
+        var popup_d726b1d0b34ce429c042082ae0640b16 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_26e3b7735b316d563c0108a655ef2de4 = $(`<div id="html_26e3b7735b316d563c0108a655ef2de4" style="width: 100.0%; height: 100.0%;"><strong>NASA UHI Data</strong><br><strong>Location:</strong> Santa Cruz do Rio Pardo<br><strong>Average Daytime Temperature:</strong> 42.45 °C<br><strong>Buffer Average Daytime Temperature:</strong> 40.78 °C<br><strong>Estimated Population in 2000:</strong> 34561<br><strong>Daytime Temperature Difference:</strong> 1.67 °C<br><br><a href='#' onclick='alert(\`Definitions of terms used:\`);'>Click for Definitions</a></div>`)[0];
+                popup_d726b1d0b34ce429c042082ae0640b16.setContent(html_26e3b7735b316d563c0108a655ef2de4);
+            
+        
+
+        marker_1db0e06a18e4b57d9952836a7e69bfeb.bindPopup(popup_d726b1d0b34ce429c042082ae0640b16)
+        ;
+
+        
+    
+    
+            var marker_7d4ba837fe646bac8474396779fbe709 = L.marker(
+                [-23.00237575, -49.78534484],
+                {}
+            ).addTo(map_38f3df98e7fc2d411a4b6b02b8f71269);
+        
+    
+            var icon_ebefe9507875f6f670f96695482982aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7d4ba837fe646bac8474396779fbe709.setIcon(icon_ebefe9507875f6f670f96695482982aa);
+        
+    
+        var popup_f2faf11bacea88ea7d06c798662df214 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1e524ea388f19b6dcec8af1472984fd6 = $(`<div id="html_1e524ea388f19b6dcec8af1472984fd6" style="width: 100.0%; height: 100.0%;"><strong>NASA UHI Data</strong><br><strong>Location:</strong> Ourinhos<br><strong>Average Daytime Temperature:</strong> 42.03 °C<br><strong>Buffer Average Daytime Temperature:</strong> 39.87 °C<br><strong>Estimated Population in 2000:</strong> 89376<br><strong>Daytime Temperature Difference:</strong> 2.17 °C<br><br><a href='#' onclick='alert(\`Definitions of terms used:\`);'>Click for Definitions</a></div>`)[0];
+                popup_f2faf11bacea88ea7d06c798662df214.setContent(html_1e524ea388f19b6dcec8af1472984fd6);
+            
+        
+
+        marker_7d4ba837fe646bac8474396779fbe709.bindPopup(popup_f2faf11bacea88ea7d06c798662df214)
+        ;
+
+        
+    
+    
+            var marker_f4da2a746b1d4c0404e57fbf5a8a7a4f = L.marker(
+                [-23.05307357, -46.55498346],
+                {}
+            ).addTo(map_38f3df98e7fc2d411a4b6b02b8f71269);
+        
+    
+            var icon_5f970d2cfa48626be45b4c554c7ba250 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f4da2a746b1d4c0404e57fbf5a8a7a4f.setIcon(icon_5f970d2cfa48626be45b4c554c7ba250);
+        
+    
+        var popup_6c4d63c5876ce76010b4075577399da4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4d4e7c8883d36ec2000c685b75eaae94 = $(`<div id="html_4d4e7c8883d36ec2000c685b75eaae94" style="width: 100.0%; height: 100.0%;"><strong>NASA UHI Data</strong><br><strong>Location:</strong> Bragan?a Paulista<br><strong>Average Daytime Temperature:</strong> 39.57 °C<br><strong>Buffer Average Daytime Temperature:</strong> 37.16 °C<br><strong>Estimated Population in 2000:</strong> 207965<br><strong>Daytime Temperature Difference:</strong> 2.41 °C<br><br><a href='#' onclick='alert(\`Definitions of terms used:\`);'>Click for Definitions</a></div>`)[0];
+                popup_6c4d63c5876ce76010b4075577399da4.setContent(html_4d4e7c8883d36ec2000c685b75eaae94);
+            
+        
+
+        marker_f4da2a746b1d4c0404e57fbf5a8a7a4f.bindPopup(popup_6c4d63c5876ce76010b4075577399da4)
+        ;
+
+        
+    
+    
+            var marker_5c01e8b0c623a1cd389f19812b471d88 = L.marker(
+                [-22.98930579, -44.34965664],
+                {}
+            ).addTo(map_38f3df98e7fc2d411a4b6b02b8f71269);
+        
+    
+            var icon_af2a8aba70ac54e793c5c07fb3a164d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5c01e8b0c623a1cd389f19812b471d88.setIcon(icon_af2a8aba70ac54e793c5c07fb3a164d0);
+        
+    
+        var popup_49fb672c0420cee83039415d3c13c060 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_12aa4d1ff0d7fc26164d396c62d9ec64 = $(`<div id="html_12aa4d1ff0d7fc26164d396c62d9ec64" style="width: 100.0%; height: 100.0%;"><strong>NASA UHI Data</strong><br><strong>Location:</strong> Cunhambebe<br><strong>Average Daytime Temperature:</strong> 34.55 °C<br><strong>Buffer Average Daytime Temperature:</strong> 31.81 °C<br><strong>Estimated Population in 2000:</strong> 76167<br><strong>Daytime Temperature Difference:</strong> 2.74 °C<br><br><a href='#' onclick='alert(\`Definitions of terms used:\`);'>Click for Definitions</a></div>`)[0];
+                popup_49fb672c0420cee83039415d3c13c060.setContent(html_12aa4d1ff0d7fc26164d396c62d9ec64);
+            
+        
+
+        marker_5c01e8b0c623a1cd389f19812b471d88.bindPopup(popup_49fb672c0420cee83039415d3c13c060)
+        ;
+
+        
+    
+    
+            var marker_122eb8c56386f969bf7f3d4657fbafb2 = L.marker(
+                [-22.99557085, -47.49440425],
+                {}
+            ).addTo(map_38f3df98e7fc2d411a4b6b02b8f71269);
+        
+    
+            var icon_552ec3c15bba681e28eb8dfd3e996414 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_122eb8c56386f969bf7f3d4657fbafb2.setIcon(icon_552ec3c15bba681e28eb8dfd3e996414);
+        
+    
+        var popup_4c92a290c86092fa048e82e4ad85bb1b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_24eb7c293212bbb16a7cc5c84bf0bc53 = $(`<div id="html_24eb7c293212bbb16a7cc5c84bf0bc53" style="width: 100.0%; height: 100.0%;"><strong>NASA UHI Data</strong><br><strong>Location:</strong> Capivari<br><strong>Average Daytime Temperature:</strong> 43.73 °C<br><strong>Buffer Average Daytime Temperature:</strong> 43.3 °C<br><strong>Estimated Population in 2000:</strong> 33484<br><strong>Daytime Temperature Difference:</strong> 0.43 °C<br><br><a href='#' onclick='alert(\`Definitions of terms used:\`);'>Click for Definitions</a></div>`)[0];
+                popup_4c92a290c86092fa048e82e4ad85bb1b.setContent(html_24eb7c293212bbb16a7cc5c84bf0bc53);
+            
+        
+
+        marker_122eb8c56386f969bf7f3d4657fbafb2.bindPopup(popup_4c92a290c86092fa048e82e4ad85bb1b)
+        ;
+
+        
+    
+    
+            var marker_167bf4d7eecd87452a9695c4f315e855 = L.marker(
+                [-23.00234465, -46.82785599],
+                {}
+            ).addTo(map_38f3df98e7fc2d411a4b6b02b8f71269);
+        
+    
+            var icon_0962da07db50a75df804365a026237de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_167bf4d7eecd87452a9695c4f315e855.setIcon(icon_0962da07db50a75df804365a026237de);
+        
+    
+        var popup_7701be9d51e1921e68ddf92c6b56c6e0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0bc38dbd3a0ed135b97959c447dd9950 = $(`<div id="html_0bc38dbd3a0ed135b97959c447dd9950" style="width: 100.0%; height: 100.0%;"><strong>NASA UHI Data</strong><br><strong>Location:</strong> Itatiba<br><strong>Average Daytime Temperature:</strong> 39.89 °C<br><strong>Buffer Average Daytime Temperature:</strong> 37.4 °C<br><strong>Estimated Population in 2000:</strong> 65925<br><strong>Daytime Temperature Difference:</strong> 2.48 °C<br><br><a href='#' onclick='alert(\`Definitions of terms used:\`);'>Click for Definitions</a></div>`)[0];
+                popup_7701be9d51e1921e68ddf92c6b56c6e0.setContent(html_0bc38dbd3a0ed135b97959c447dd9950);
+            
+        
+
+        marker_167bf4d7eecd87452a9695c4f315e855.bindPopup(popup_7701be9d51e1921e68ddf92c6b56c6e0)
+        ;
+
+        
+    
+    
+            var marker_465259c170bf55d5f34827eb24e7ad74 = L.marker(
+                [-23.03632427, -50.06685291],
+                {}
+            ).addTo(map_38f3df98e7fc2d411a4b6b02b8f71269);
+        
+    
+            var icon_ea2a1aaefab3594a7af5ddc0cdb80723 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_465259c170bf55d5f34827eb24e7ad74.setIcon(icon_ea2a1aaefab3594a7af5ddc0cdb80723);
+        
+    
+        var popup_1178028318b2f1e138babc48f96bf036 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_de1f49e65166909946f27335435ae8a0 = $(`<div id="html_de1f49e65166909946f27335435ae8a0" style="width: 100.0%; height: 100.0%;"><strong>NASA UHI Data</strong><br><strong>Location:</strong> Cambar <br><strong>Average Daytime Temperature:</strong> 41.89 °C<br><strong>Buffer Average Daytime Temperature:</strong> 40.52 °C<br><strong>Estimated Population in 2000:</strong> 20022<br><strong>Daytime Temperature Difference:</strong> 1.37 °C<br><br><a href='#' onclick='alert(\`Definitions of terms used:\`);'>Click for Definitions</a></div>`)[0];
+                popup_1178028318b2f1e138babc48f96bf036.setContent(html_de1f49e65166909946f27335435ae8a0);
+            
+        
+
+        marker_465259c170bf55d5f34827eb24e7ad74.bindPopup(popup_1178028318b2f1e138babc48f96bf036)
+        ;
+
+        
+    
+    
+            var marker_1a68573b64e0ce1693c51ec70644c40c = L.marker(
+                [-23.08085505, -52.44407861],
+                {}
+            ).addTo(map_38f3df98e7fc2d411a4b6b02b8f71269);
+        
+    
+            var icon_ebc9d77049b7c1ebd220b0203b4c8a49 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1a68573b64e0ce1693c51ec70644c40c.setIcon(icon_ebc9d77049b7c1ebd220b0203b4c8a49);
+        
+    
+        var popup_868c2439bf1e89c04760012331ae9ec4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b43c6660343f665dc49b83dbe7c2a449 = $(`<div id="html_b43c6660343f665dc49b83dbe7c2a449" style="width: 100.0%; height: 100.0%;"><strong>NASA UHI Data</strong><br><strong>Location:</strong> Paranavai<br><strong>Average Daytime Temperature:</strong> 42.9 °C<br><strong>Buffer Average Daytime Temperature:</strong> 42.64 °C<br><strong>Estimated Population in 2000:</strong> 66259<br><strong>Daytime Temperature Difference:</strong> 0.26 °C<br><br><a href='#' onclick='alert(\`Definitions of terms used:\`);'>Click for Definitions</a></div>`)[0];
+                popup_868c2439bf1e89c04760012331ae9ec4.setContent(html_b43c6660343f665dc49b83dbe7c2a449);
+            
+        
+
+        marker_1a68573b64e0ce1693c51ec70644c40c.bindPopup(popup_868c2439bf1e89c04760012331ae9ec4)
+        ;
+
+        
+    
+    
+            var marker_3296688172ed50fa72e23df832e15e75 = L.marker(
+                [-23.10725095, -48.96049208],
+                {}
+            ).addTo(map_38f3df98e7fc2d411a4b6b02b8f71269);
+        
+    
+            var icon_f2c4bf2818f19e9974b8c3508771fd86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3296688172ed50fa72e23df832e15e75.setIcon(icon_f2c4bf2818f19e9974b8c3508771fd86);
+        
+    
+        var popup_71cd21800ec96aa15724eca158f514ab = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_402e608065641d68fa6eb65b7b1182a7 = $(`<div id="html_402e608065641d68fa6eb65b7b1182a7" style="width: 100.0%; height: 100.0%;"><strong>NASA UHI Data</strong><br><strong>Location:</strong> Avar?<br><strong>Average Daytime Temperature:</strong> 38.32 °C<br><strong>Buffer Average Daytime Temperature:</strong> 38.3 °C<br><strong>Estimated Population in 2000:</strong> 72387<br><strong>Daytime Temperature Difference:</strong> 0.02 °C<br><br><a href='#' onclick='alert(\`Definitions of terms used:\`);'>Click for Definitions</a></div>`)[0];
+                popup_71cd21800ec96aa15724eca158f514ab.setContent(html_402e608065641d68fa6eb65b7b1182a7);
+            
+        
+
+        marker_3296688172ed50fa72e23df832e15e75.bindPopup(popup_71cd21800ec96aa15724eca158f514ab)
+        ;
+
+        
+    
+    
+            var marker_50afdff2c3cf77b292427dac9c24c44b = L.marker(
+                [-23.09764919, -47.20135209],
+                {}
+            ).addTo(map_38f3df98e7fc2d411a4b6b02b8f71269);
+        
+    
+            var icon_4a0a8c0c7cd2a663b037eb32d2d28dab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_50afdff2c3cf77b292427dac9c24c44b.setIcon(icon_4a0a8c0c7cd2a663b037eb32d2d28dab);
+        
+    
+        var popup_769099896d1480475cf3cb1bc1cf2cb7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3552eb0f53892420c3f5f1749ed586fb = $(`<div id="html_3552eb0f53892420c3f5f1749ed586fb" style="width: 100.0%; height: 100.0%;"><strong>NASA UHI Data</strong><br><strong>Location:</strong> Indaiatuba<br><strong>Average Daytime Temperature:</strong> 42.51 °C<br><strong>Buffer Average Daytime Temperature:</strong> 41.89 °C<br><strong>Estimated Population in 2000:</strong> 144740<br><strong>Daytime Temperature Difference:</strong> 0.62 °C<br><br><a href='#' onclick='alert(\`Definitions of terms used:\`);'>Click for Definitions</a></div>`)[0];
+                popup_769099896d1480475cf3cb1bc1cf2cb7.setContent(html_3552eb0f53892420c3f5f1749ed586fb);
+            
+        
+
+        marker_50afdff2c3cf77b292427dac9c24c44b.bindPopup(popup_769099896d1480475cf3cb1bc1cf2cb7)
+        ;
+
+        
+    
+    
+            var marker_3fceb9f1b39e9067180a0d9a15f4ab6b = L.marker(
+                [-26.72908089, -53.51283188],
+                {}
+            ).addTo(map_38f3df98e7fc2d411a4b6b02b8f71269);
+        
+    
+            var icon_a81f8f9cac9595fdc95a3b769eeb3686 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3fceb9f1b39e9067180a0d9a15f4ab6b.setIcon(icon_a81f8f9cac9595fdc95a3b769eeb3686);
+        
+    
+        var popup_c013a2fdb29a696d3af687cc9edfec8a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7fa307e0b14bb6964b03eccf5f0c91b3 = $(`<div id="html_7fa307e0b14bb6964b03eccf5f0c91b3" style="width: 100.0%; height: 100.0%;"><strong>NASA UHI Data</strong><br><strong>Location:</strong> S?o Miguel d'Oeste<br><strong>Average Daytime Temperature:</strong> 39.92 °C<br><strong>Buffer Average Daytime Temperature:</strong> 39.79 °C<br><strong>Estimated Population in 2000:</strong> 27392<br><strong>Daytime Temperature Difference:</strong> 0.13 °C<br><br><a href='#' onclick='alert(\`Definitions of terms used:\`);'>Click for Definitions</a></div>`)[0];
+                popup_c013a2fdb29a696d3af687cc9edfec8a.setContent(html_7fa307e0b14bb6964b03eccf5f0c91b3);
+            
+        
+
+        marker_3fceb9f1b39e9067180a0d9a15f4ab6b.bindPopup(popup_c013a2fdb29a696d3af687cc9edfec8a)
+        ;
+
+        
+    
+    
+            var marker_4988bf8dc763f2ab03345f8344dc578d = L.marker(
+                [-29.17317073, -51.2085101],
+                {}
+            ).addTo(map_38f3df98e7fc2d411a4b6b02b8f71269);
+        
+    
+            var icon_e1c2751194979ffd22a3961a9f9f148a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4988bf8dc763f2ab03345f8344dc578d.setIcon(icon_e1c2751194979ffd22a3961a9f9f148a);
+        
+    
+        var popup_dab52091f510f1ad94ac11c3cc029444 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_be9ec51f91fc2e72281aec1c8d527ed2 = $(`<div id="html_be9ec51f91fc2e72281aec1c8d527ed2" style="width: 100.0%; height: 100.0%;"><strong>NASA UHI Data</strong><br><strong>Location:</strong> Caxias do Sul<br><strong>Average Daytime Temperature:</strong> 36.28 °C<br><strong>Buffer Average Daytime Temperature:</strong> 34.12 °C<br><strong>Estimated Population in 2000:</strong> 371414<br><strong>Daytime Temperature Difference:</strong> 2.16 °C<br><br><a href='#' onclick='alert(\`Definitions of terms used:\`);'>Click for Definitions</a></div>`)[0];
+                popup_dab52091f510f1ad94ac11c3cc029444.setContent(html_be9ec51f91fc2e72281aec1c8d527ed2);
+            
+        
+
+        marker_4988bf8dc763f2ab03345f8344dc578d.bindPopup(popup_dab52091f510f1ad94ac11c3cc029444)
+        ;
+
+        
+    
+    
+            var marker_76054dbdd5c97ffbd84984a8d96910a6 = L.marker(
+                [-29.45695708, -51.95641503],
+                {}
+            ).addTo(map_38f3df98e7fc2d411a4b6b02b8f71269);
+        
+    
+            var icon_12a6feaf7f25076fa10b712ffadd5f77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_76054dbdd5c97ffbd84984a8d96910a6.setIcon(icon_12a6feaf7f25076fa10b712ffadd5f77);
+        
+    
+        var popup_dd0b1950b98ae569e714d4cfbdcc96fd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8ae9dceaf54e9d4cdc62934ad01d6cb8 = $(`<div id="html_8ae9dceaf54e9d4cdc62934ad01d6cb8" style="width: 100.0%; height: 100.0%;"><strong>NASA UHI Data</strong><br><strong>Location:</strong> Lajeado<br><strong>Average Daytime Temperature:</strong> 40.0 °C<br><strong>Buffer Average Daytime Temperature:</strong> 38.43 °C<br><strong>Estimated Population in 2000:</strong> 81552<br><strong>Daytime Temperature Difference:</strong> 1.57 °C<br><br><a href='#' onclick='alert(\`Definitions of terms used:\`);'>Click for Definitions</a></div>`)[0];
+                popup_dd0b1950b98ae569e714d4cfbdcc96fd.setContent(html_8ae9dceaf54e9d4cdc62934ad01d6cb8);
+            
+        
+
+        marker_76054dbdd5c97ffbd84984a8d96910a6.bindPopup(popup_dd0b1950b98ae569e714d4cfbdcc96fd)
+        ;
+
+        
+    
+    
+            var marker_cb1d2521dc07dd684e3e41ff1673c9cd = L.marker(
+                [-29.72159312, -52.43218294],
+                {}
+            ).addTo(map_38f3df98e7fc2d411a4b6b02b8f71269);
+        
+    
+            var icon_6f41d87be1ed71b5819cdd0e4f5d2244 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cb1d2521dc07dd684e3e41ff1673c9cd.setIcon(icon_6f41d87be1ed71b5819cdd0e4f5d2244);
+        
+    
+        var popup_817f32495afdc217bb6886c535e9f9f6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_57142a37c11c0fb29288315f2ad0053c = $(`<div id="html_57142a37c11c0fb29288315f2ad0053c" style="width: 100.0%; height: 100.0%;"><strong>NASA UHI Data</strong><br><strong>Location:</strong> Santa Cruz do Sul<br><strong>Average Daytime Temperature:</strong> 40.1 °C<br><strong>Buffer Average Daytime Temperature:</strong> 38.89 °C<br><strong>Estimated Population in 2000:</strong> 91705<br><strong>Daytime Temperature Difference:</strong> 1.21 °C<br><br><a href='#' onclick='alert(\`Definitions of terms used:\`);'>Click for Definitions</a></div>`)[0];
+                popup_817f32495afdc217bb6886c535e9f9f6.setContent(html_57142a37c11c0fb29288315f2ad0053c);
+            
+        
+
+        marker_cb1d2521dc07dd684e3e41ff1673c9cd.bindPopup(popup_817f32495afdc217bb6886c535e9f9f6)
+        ;
+
+        
+    
+</script>
+</html>

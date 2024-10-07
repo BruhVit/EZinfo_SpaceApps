@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Queimadas</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Arquivo CSS externo -->
+</head>
+<body>
+    
+    <div class="definicoes-box">
+        <h4>Definitions:</h4>
+        <ul>
+            <li><strong>First icon:</strong>Wildfire Alerts.</li>
+            <li><strong>Second icon:</strong>Precipitation Index.</li>
+            <li><strong>Third icon:</strong>Wildfire Risk.</li>
+            <li></li>
+            <li><strong>Municipality and state:</strong>The exact location where the alert occurred.</li>
+            <li><strong>Date and time:</strong> The exact time and date when the alert occurred.</li>
+            <li><strong>Days without rain:</strong> The exact number of days without rainfall in the region.</li>
+            <li><strong>Precipitation:</strong> Precipitation refers to any form of water - liquid or solid - that falls from the atmosphere and reaches the ground. This includes rain, snow, sleet, and hail.</li>
+            <li><strong>Fire risk:</strong> Fire risk (also known as wildfire risk) refers to the likelihood or probability of a fire starting, spreading, and causing damage in a given area.</li>
+            <li><strong>Biome:</strong> A biome is a large geographic area characterized by its climate, soil type, and the types of plants and animals that live there.</li>
+            <li><strong>Average Daytime Temperature:</strong> The mean maximum land surface temperature during the daytime within the urban area (in °C).</li>
+            <li><strong>Buffer Average Daytime Temperature:</strong> The mean maximum land surface temperature during the daytime in a 10 km buffer zone surrounding the urban area (in °C).</li>
+            <li><strong>Estimated Population in 2000:</strong> The estimated number of people living in the urban area in the year 2000.</li>
+            <li><strong>Daytime Temperature Difference:</strong> The difference in average daytime maximum temperature between the urban area and the buffer area (in °C).</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h1>Wildfires in Rio de Janeiro-São Paulo</h1>
+            <p>
+                Our project introduces an interactive map designed to visualize wildfire hotspots and their significant effects on agriculture in the Rio-SP region. This engaging platform utilizes a rich visual style, enabling users to navigate a detailed landscape that highlights areas affected by wildfires.
+            </p>
+            <p>
+                Users can explore various layers of data representing wildfire occurrences, including intensity, frequency, and geographic spread. The map allows for dynamic interaction, where users can zoom in on specific regions, filter data by date, and observe the impact on different agricultural zones. This enables a deeper understanding of how wildfires threaten crops and agricultural productivity.
+            </p>
+            <p>
+                Additionally, the map incorporates visual storytelling elements, showcasing before-and-after scenarios of affected areas to illustrate the devastating consequences of wildfires on the landscape. Users can also access information on soil degradation, crop loss, and economic impacts, presented in an intuitive and visually appealing manner.
+            </p>
+            <p>
+                By combining immersive visuals with comprehensive data, our project aims to foster awareness of the critical issue of wildfires and their effects on agriculture. This interactive approach not only enhances user engagement but also serves as a powerful tool for educating the public and stakeholders about the urgent need for sustainable land management and wildfire prevention strategies.
+            </p>
+        </div>
+        <div class="icons">
+            <!-- Botões principais -->
+            <button class="icon-button" id="botao-brasil">
+                <img src="iconemundo.png" alt="Wildfire risk Map">
+            </button>
+
+            <button class="icon-button" id="botao-agua">
+                <img src="iconeagua.png">
+            </button>
+
+            <button class="icon-button" id="botao-termometro">
+                <img src="iconetemp.png">
+            </button>
+
+            <button class="icon-button" id="botao-nasa">
+                <img src="iconenasa.png" alt="Bloco de Notas">
+            </button>
+
+            <!-- Novo botão para o bloco de notas -->
+            <button class="icon-button" id="botao-notas">
+                <img src="iconenotas.png" alt="Bloco de Notas">
+            </button>
+
+
+            <!-- Botões RJ e SP (escondidos inicialmente) -->
+            <div id="opcoes-brasil" class="opcoes-botoes" style="display: none;">
+                <button class="icon-button" id="botao-rj">RJ</button>
+                <button class="icon-button" id="botao-sp">SP</button>
+            </div>
+
+            <!-- Botões Chuvas e Umidade (escondidos inicialmente) -->
+            <div id="opcoes-agua" class="opcoes-botoes" style="display: none;">
+                <button class="icon-button" id="botao-chuvas">RJ</button>
+                <button class="icon-button" id="botao-umidade">SP</button>
+            </div>
+
+            <!-- Botões Max Temp e Min Temp (escondidos inicialmente) -->
+            <div id="opcoes-temp" class="opcoes-botoes" style="display: none;">
+                <button class="icon-button" id="botao-max-temp">RJ</button>
+                <button class="icon-button" id="botao-min-temp">SP</button>
+            </div>
+        </div>
+        <div class="mapa">
+            <iframe id="map-frame" src="meu_mapa.html" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <!-- Modal para o bloco de notas -->
+    <div id="modal-bloco-notas" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" id="fechar-modal">&times;</span>
+            <h2>Bloco de Notas</h2>
+            <textarea id="bloco-de-notas" rows="10" cols="50" placeholder="Escreva suas notas aqui..."></textarea>
+            <br>
+            <button id="salvar-notas">Salvar Notas</button>
+        </div>
+    </div>
+
+    <script>
+
+        function trocarMapa(mapa) {
+            document.getElementById('map-frame').src = mapa;
+        }
+
+        function esconderOpcoes() {
+            document.getElementById('opcoes-brasil').style.display = 'none';
+            document.getElementById('opcoes-agua').style.display = 'none';
+            document.getElementById('opcoes-temp').style.display = 'none';
+        }
+
+        // Evento para o botão do Brasil (mostra opções RJ e SP)
+        document.getElementById('botao-brasil').addEventListener('click', function() {
+            esconderOpcoes();  // Esconde todas as opções
+            document.getElementById('opcoes-brasil').style.display = 'block';  // Exibe botões RJ e SP
+        });
+
+        // Evento para os botões RJ e SP (carregam mapas específicos)
+        document.getElementById('botao-rj').addEventListener('click', function() {
+            trocarMapa('mapa_queimadaRJ.html');  // Carrega o mapa RJ
+            esconderOpcoes();  // Esconde os botões após o clique
+        });
+
+        document.getElementById('botao-sp').addEventListener('click', function() {
+            trocarMapa('mapa_queimadaSP.html');  // Carrega o mapa SP
+            esconderOpcoes();  // Esconde os botões após o clique
+        });
+
+        document.getElementById('botao-nasa').addEventListener('click', function() {
+            trocarMapa('sdei-global-uhi.html');  // Carrega o mapa SP
+            esconderOpcoes();  // Esconde os botões após o clique
+        });
+
+        // Evento para o botão Água (mostra opções Chuvas e Umidade)
+        document.getElementById('botao-agua').addEventListener('click', function() {
+            esconderOpcoes();  // Esconde todas as opções
+            document.getElementById('opcoes-agua').style.display = 'block';  // Exibe botões Chuvas e Umidade
+        });
+
+        // Evento para os botões Chuvas e Umidade (carregam mapas específicos)
+        document.getElementById('botao-chuvas').addEventListener('click', function() {
+            trocarMapa('mapa_precipitacaoRJ.html');  // Carrega o mapa de chuvas
+            esconderOpcoes();  // Esconde os botões após o clique
+        });
+
+        document.getElementById('botao-umidade').addEventListener('click', function() {
+            trocarMapa('mapa_precipitacaoSP.html');  // Carrega o mapa de umidade
+            esconderOpcoes();  // Esconde os botões após o clique
+        });
+
+        // Evento para o botão Termômetro (mostra opções Max e Min Temperatura)
+        document.getElementById('botao-termometro').addEventListener('click', function() {
+            esconderOpcoes();  // Esconde todas as opções
+            document.getElementById('opcoes-temp').style.display = 'block';  // Exibe botões Max Temp e Min Temp
+        });
+
+        // Evento para os botões Max Temp e Min Temp (carregam mapas específicos)
+        document.getElementById('botao-max-temp').addEventListener('click', function() {
+            trocarMapa('mapa_risco_fogo_altoRJ.html');  // Carrega o mapa de temperatura máxima
+            esconderOpcoes();  // Esconde os botões após o clique
+        });
+
+        document.getElementById('botao-min-temp').addEventListener('click', function() {
+            trocarMapa('mapa_risco_fogo_altoSP.html');  // Carrega o mapa de temperatura mínima
+            esconderOpcoes();  // Esconde os botões após o clique
+        });
+
+        // Evento para abrir o bloco de notas
+        document.getElementById('botao-notas').addEventListener('click', function() {
+            document.getElementById('modal-bloco-notas').style.display = 'block';  // Exibe o modal
+        });
+
+        // Evento para fechar o bloco de notas
+        document.getElementById('fechar-modal').addEventListener('click', function() {
+            document.getElementById('modal-bloco-notas').style.display = 'none';  // Esconde o modal
+        });
+
+        // Salvar notas no localStorage
+        document.getElementById('salvar-notas').addEventListener('click', function() {
+            const notas = document.getElementById('bloco-de-notas').value;
+            localStorage.setItem('userNotes', notas);
+            alert('Notas salvas com sucesso!');
+        });
+
+        // Carregar as notas do localStorage ao abrir o modal
+        document.getElementById('botao-notas').addEventListener('click', function() {
+            const notasSalvas = localStorage.getItem('userNotes');
+            if (notasSalvas) {
+                document.getElementById('bloco-de-notas').value = notasSalvas;
+            }
+        });
+
+    </script>
+</body>
+</html>
