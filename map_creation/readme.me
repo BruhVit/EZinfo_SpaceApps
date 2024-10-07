@@ -1,1 +1,132 @@
-read.
+# Wildfire Visualization Map of São Paulo
+
+This project visualizes wildfire hotspots across São Paulo state, using data on fire incidents and related environmental factors. The project uses Python and the Folium library to create an interactive map that displays markers for each recorded wildfire event.
+
+#Project Overview
+
+The aim of this project is to map wildfire incidents in São Paulo state and provide additional context, such as:
+- The municipality where the fire occurred
+- The number of days without rain prior to the fire
+- Precipitation levels
+- Fire risk level
+- Biome
+- Fire Radiative Power (FRP)
+
+This data is displayed interactively on a map with red markers at the exact latitude and longitude of each incident.
+
+# Tools and Libraries
+
+- **Python**: Main language used for scripting.
+- **Folium**: A Python library that allows easy creation of interactive maps.
+- **Pandas**: Used to manipulate and process the data from the CSV file.
+
+# CSV Data from INPE: This dataset contains wildfire information for areas in São Paulo and Rio de Janeiro region.
+
+The CSV file used contains the following columns:
+- `lat`: Latitude where the wildfire event was detected.
+- `lon`: Longitude where the wildfire event was detected.
+- `municipio`: Municipality where the wildfire occurred.
+- `estado`: State where the wildfire occurred (São Paulo in this case).
+- `data_hora_gmt`: The date and time of the incident.
+- `numero_dias_sem_chuva`: Number of days without rain prior to the wildfire event.
+- `precipitacao`: Precipitation levels during the event.
+- `risco_fogo`: Fire risk level.
+- `bioma`: The biome where the wildfire occurred.
+- `frp`: Fire Radiative Power, indicating the intensity of the fire.
+
+# CSV Data from NASA Columbia Dataset: This dataset contains UHI-related information for various urban areas worldwide.
+ISOURBID: Identifier for the urban area.
+ISO3: ISO country code.
+URBID: Unique identifier for the urban region.
+NAME: Name of the urban area.
+SCHNM: Standardized name of the urban area.
+ES90POP: Estimated population for 1990.
+ES95POP: Estimated population for 1995.
+ES00POP: Estimated population for 2000.
+SQKM_FINAL: Final square kilometer area of the urban region.
+URB_D_MEAN: Mean daytime temperature for the urban area.
+BUF_D_MEAN: Mean daytime temperature for the buffer (rural) area.
+D_T_DIFF: Daytime temperature difference between the urban and buffer areas.
+URB_N_MEAN: Mean nighttime temperature for the urban area.
+BUF_N_MEAN: Mean nighttime temperature for the buffer (rural) area.
+N_T_DIFF: Nighttime temperature difference between the urban and buffer areas.
+LATITUDE: Latitude of the urban area.
+LONGITUDE: Longitude of the urban area.
+
+## Code Explanation
+
+### 1. Import Libraries
+We use `pandas` to read and process the data from the CSV file, and `folium` to create the interactive map.
+
+```python
+import folium
+import pandas as pd
+```
+
+### 2. Upload the CSV File
+We load the CSV file that contains wildfire data for São Paulo. Make sure to replace `'focos_mensal_br_202301 - SP.csv'` with the actual name of your CSV file.
+
+```python
+data = pd.read_csv('focos_mensal_br_202301 - SP.csv')
+```
+
+### 3. Create the Map
+data = pd.read_csv('focos_mensal_br_202301 - SP.csv')  # Replace with the correct name of the CSV file
+
+```python
+queimadaSP_map = folium.Map(location=[-23.5, -46.5], zoom_start=6, max_zoom=10, min_zoom=4)
+```
+
+### 4. Add Markers
+For each wildfire incident, we add a red marker on the map with a popup containing detailed information about the fire event.
+
+```python
+for index, row in data.iterrows():
+    popup_info = f"""
+    Municipality: {row['municipio']}<br>
+    State: {row['estado']}<br>
+    Date/Time: {row['data_hora_gmt']}<br>
+    Days without rain: {row['numero_dias_sem_chuva']}<br>
+    Precipitation: {row['precipitacao']}<br>
+    Fire Risk: {row['risco_fogo']}<br>
+    Biome: {row['bioma']}<br>
+    FRP: {row['frp']}
+    """
+    
+    folium.Marker(
+        location=[row['lat'], row['lon']],
+        popup=popup_info,
+        icon=folium.Icon(color='red')
+    ).add_to(queimadaSP_map)
+```
+
+### 5. Display and Save the Map
+Once the map is complete, it can be viewed in a Jupyter notebook or saved as an HTML file for use in a web application.
+
+```python
+# Display the map
+queimadaSP_map
+
+# Save the map to an HTML file
+queimadaSP_map.save('queimadasp_map.html')
+```
+
+## Usage
+
+1. Install the required libraries:
+   ```
+   pip install folium pandas
+   ```
+
+2. Place your CSV file with the wildfire data in the same directory as the script.
+
+3. Run the script in your Python environment (such as Google Colab or Jupyter).
+
+4. The resulting map will be displayed, and an HTML file will be generated with the interactive map.
+
+## Future Improvements
+
+- **Additional Data**: Incorporate more environmental data such as wind speed, humidity, or satellite imagery.
+- **Filters**: Add filters to allow users to view fires based on date ranges, fire risk, or FRP intensity.
+
+---
